@@ -1,0 +1,2994 @@
+﻿{
+    "viable": false,
+    "fitness_score": 0.5444357526678089,
+    "generations_run": 150,
+    "max_end_day": 167,
+    "deadline_days": 363,
+    "within_deadline": true,
+    "total_activities": 35,
+    "outsourced_count": 1,
+    "summary": {
+        "status": "⚠ Needs outsourcing – 1 role(s) unfilled",
+        "total_cost_usd": 62624.0,
+        "roles_staffed": 34,
+        "roles_outsourced": 1,
+        "project_duration_days": 167,
+        "deadline_days": 363,
+        "within_deadline": true
+    },
+    "deliverables": [
+        {
+            "order": 1,
+            "name": "Kickoff & Requirements Document (DR)",
+            "deadline_in_days": 15,
+            "total_cost_usd": 10288.0,
+            "activities": [
+                {
+                    "name": "Project kickoff and stakeholder alignment",
+                    "start_day": 2,
+                    "end_day": 4,
+                    "status": "✓ Fully staffed",
+                    "solutions": [
+                        {
+                            "rank": 1,
+                            "cost": 6080.0,
+                            "real_cost": 2960.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Project Manager",
+                                    "position": "Team Leader",
+                                    "employee_id": "julia.moreira@tcc2026.com.br",
+                                    "employee_name": "Julia Moreira",
+                                    "employee_position": "Team Leader",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Project and Program Management",
+                                        "Legal, Contracting and Dispute Resolution"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "legal, contracting and dispute resolution"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-08",
+                                        "2026-06-09",
+                                        "2026-06-10"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Senior Energy Market Analyst",
+                                    "position": "Expert",
+                                    "employee_id": "sandra.ramos@tcc2026.com.br",
+                                    "employee_name": "Sandra Ramos",
+                                    "employee_position": "Team Leader",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Power Market Analysis and Market Design",
+                                        "Communication, Presentation and Documentation"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "communication, presentation and documentation",
+                                        "power market analysis and market design"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-08"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 2,
+                                    "role": "Lead Software Architect / Full-Stack Developer",
+                                    "position": "Lead Specialist",
+                                    "employee_id": "claudia.moura@tcc2026.com.br",
+                                    "employee_name": "Claudia Moura",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Quality Assurance, Testing and Validation",
+                                        "Business Analysis and Consulting"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "business analysis and consulting"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-08"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 2,
+                            "cost": 6080.0,
+                            "real_cost": 2960.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Project Manager",
+                                    "position": "Team Leader",
+                                    "employee_id": "julia.moreira@tcc2026.com.br",
+                                    "employee_name": "Julia Moreira",
+                                    "employee_position": "Team Leader",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Project and Program Management",
+                                        "Legal, Contracting and Dispute Resolution"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "legal, contracting and dispute resolution"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-08",
+                                        "2026-06-09",
+                                        "2026-06-10"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Senior Energy Market Analyst",
+                                    "position": "Expert",
+                                    "employee_id": "sandra.ramos@tcc2026.com.br",
+                                    "employee_name": "Sandra Ramos",
+                                    "employee_position": "Team Leader",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Power Market Analysis and Market Design",
+                                        "Communication, Presentation and Documentation"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "communication, presentation and documentation",
+                                        "power market analysis and market design"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-08"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 2,
+                                    "role": "Lead Software Architect / Full-Stack Developer",
+                                    "position": "Lead Specialist",
+                                    "employee_id": "marcelo.teixeira@tcc2026.com.br",
+                                    "employee_name": "Marcelo Teixeira",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Quality Assurance, Testing and Validation",
+                                        "Business Analysis and Consulting"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "quality assurance, testing and validation"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-09"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 3,
+                            "cost": 6080.0,
+                            "real_cost": 2960.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Project Manager",
+                                    "position": "Team Leader",
+                                    "employee_id": "julia.moreira@tcc2026.com.br",
+                                    "employee_name": "Julia Moreira",
+                                    "employee_position": "Team Leader",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Project and Program Management",
+                                        "Legal, Contracting and Dispute Resolution"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "legal, contracting and dispute resolution"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-08",
+                                        "2026-06-09",
+                                        "2026-06-10"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Senior Energy Market Analyst",
+                                    "position": "Expert",
+                                    "employee_id": "sandra.ramos@tcc2026.com.br",
+                                    "employee_name": "Sandra Ramos",
+                                    "employee_position": "Team Leader",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Power Market Analysis and Market Design",
+                                        "Communication, Presentation and Documentation"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "communication, presentation and documentation",
+                                        "power market analysis and market design"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-08"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 2,
+                                    "role": "Lead Software Architect / Full-Stack Developer",
+                                    "position": "Lead Specialist",
+                                    "employee_id": "wesley.moraes@tcc2026.com.br",
+                                    "employee_name": "Wesley Moraes",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Quality Assurance, Testing and Validation",
+                                        "Business Analysis and Consulting"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "quality assurance, testing and validation"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-08"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Requirements elicitation and DR elaboration",
+                    "start_day": 4,
+                    "end_day": 16,
+                    "status": "✓ Fully staffed",
+                    "solutions": [
+                        {
+                            "rank": 1,
+                            "cost": 9984.0,
+                            "real_cost": 3968.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Business Analyst / Documentation & QA Specialist",
+                                    "position": "Specialist",
+                                    "employee_id": "rodrigo.machado@tcc2026.com.br",
+                                    "employee_name": "Rodrigo Machado",
+                                    "employee_position": "Specialist",
+                                    "skill_match_score": 0.3333,
+                                    "required_macro_skills": [
+                                        "Business Analysis and Consulting",
+                                        "Software Development and Engineering",
+                                        "Research, Academia and Technical Writing"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "software development and engineering"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-11",
+                                        "2026-06-12",
+                                        "2026-06-15",
+                                        "2026-06-16",
+                                        "2026-06-17",
+                                        "2026-06-18",
+                                        "2026-06-19",
+                                        "2026-06-22"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Lead Software Architect / Full-Stack Developer",
+                                    "position": "Lead Specialist",
+                                    "employee_id": "claudia.moura@tcc2026.com.br",
+                                    "employee_name": "Claudia Moura",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Business Analysis and Consulting",
+                                        "Software Development and Engineering"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "business analysis and consulting"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-11",
+                                        "2026-06-12",
+                                        "2026-06-15",
+                                        "2026-06-16"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 2,
+                                    "role": "UX/UI Designer & Frontend Developer",
+                                    "position": "Lead Analyst",
+                                    "employee_id": "maria.fernandes@tcc2026.com.br",
+                                    "employee_name": "Maria Fernandes",
+                                    "employee_position": "Lead Analyst",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Business Analysis and Consulting",
+                                        "Software Development and Engineering"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "business analysis and consulting"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-11",
+                                        "2026-06-12"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 2,
+                            "cost": 9984.0,
+                            "real_cost": 3968.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Business Analyst / Documentation & QA Specialist",
+                                    "position": "Specialist",
+                                    "employee_id": "rodrigo.machado@tcc2026.com.br",
+                                    "employee_name": "Rodrigo Machado",
+                                    "employee_position": "Specialist",
+                                    "skill_match_score": 0.3333,
+                                    "required_macro_skills": [
+                                        "Business Analysis and Consulting",
+                                        "Software Development and Engineering",
+                                        "Research, Academia and Technical Writing"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "software development and engineering"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-11",
+                                        "2026-06-12",
+                                        "2026-06-15",
+                                        "2026-06-16",
+                                        "2026-06-17",
+                                        "2026-06-18",
+                                        "2026-06-19",
+                                        "2026-06-22"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Lead Software Architect / Full-Stack Developer",
+                                    "position": "Lead Specialist",
+                                    "employee_id": "marcelo.teixeira@tcc2026.com.br",
+                                    "employee_name": "Marcelo Teixeira",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Business Analysis and Consulting",
+                                        "Software Development and Engineering"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "software development and engineering"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-11",
+                                        "2026-06-12",
+                                        "2026-06-15",
+                                        "2026-06-16"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 2,
+                                    "role": "UX/UI Designer & Frontend Developer",
+                                    "position": "Lead Analyst",
+                                    "employee_id": "maria.fernandes@tcc2026.com.br",
+                                    "employee_name": "Maria Fernandes",
+                                    "employee_position": "Lead Analyst",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Business Analysis and Consulting",
+                                        "Software Development and Engineering"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "business analysis and consulting"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-11",
+                                        "2026-06-12"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 3,
+                            "cost": 9984.0,
+                            "real_cost": 3968.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Business Analyst / Documentation & QA Specialist",
+                                    "position": "Specialist",
+                                    "employee_id": "rodrigo.machado@tcc2026.com.br",
+                                    "employee_name": "Rodrigo Machado",
+                                    "employee_position": "Specialist",
+                                    "skill_match_score": 0.3333,
+                                    "required_macro_skills": [
+                                        "Business Analysis and Consulting",
+                                        "Software Development and Engineering",
+                                        "Research, Academia and Technical Writing"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "software development and engineering"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-11",
+                                        "2026-06-12",
+                                        "2026-06-15",
+                                        "2026-06-16",
+                                        "2026-06-17",
+                                        "2026-06-18",
+                                        "2026-06-19",
+                                        "2026-06-22"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Lead Software Architect / Full-Stack Developer",
+                                    "position": "Lead Specialist",
+                                    "employee_id": "marcelo.teixeira@tcc2026.com.br",
+                                    "employee_name": "Marcelo Teixeira",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Business Analysis and Consulting",
+                                        "Software Development and Engineering"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "software development and engineering"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-11",
+                                        "2026-06-12",
+                                        "2026-06-15",
+                                        "2026-06-16"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 2,
+                                    "role": "UX/UI Designer & Frontend Developer",
+                                    "position": "Lead Analyst",
+                                    "employee_id": "paulo.silva@tcc2026.com.br",
+                                    "employee_name": "Paulo Silva",
+                                    "employee_position": "Lead Analyst",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Business Analysis and Consulting",
+                                        "Software Development and Engineering"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "business analysis and consulting"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-11",
+                                        "2026-06-12"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Detailed work plan with iterations/modules",
+                    "start_day": 16,
+                    "end_day": 20,
+                    "status": "✓ Fully staffed",
+                    "solutions": [
+                        {
+                            "rank": 1,
+                            "cost": 4640.0,
+                            "real_cost": 3360.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Project Manager",
+                                    "position": "Team Leader",
+                                    "employee_id": "sandra.ramos@tcc2026.com.br",
+                                    "employee_name": "Sandra Ramos",
+                                    "employee_position": "Team Leader",
+                                    "skill_match_score": 0.6667,
+                                    "required_macro_skills": [
+                                        "Project and Program Management",
+                                        "Digital Transformation and Process Improvement",
+                                        "Risk, Uncertainty and Scenario Analysis"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "project and program management",
+                                        "risk, uncertainty and scenario analysis"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-23",
+                                        "2026-06-24",
+                                        "2026-06-25",
+                                        "2026-06-26"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Lead Software Architect / Full-Stack Developer",
+                                    "position": "Lead Specialist",
+                                    "employee_id": "marcelo.teixeira@tcc2026.com.br",
+                                    "employee_name": "Marcelo Teixeira",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Project and Program Management",
+                                        "Software Development and Engineering"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "project and program management",
+                                        "software development and engineering"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-23",
+                                        "2026-06-24"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 2,
+                            "cost": 5440.0,
+                            "real_cost": 3360.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Project Manager",
+                                    "position": "Team Leader",
+                                    "employee_id": "sandra.ramos@tcc2026.com.br",
+                                    "employee_name": "Sandra Ramos",
+                                    "employee_position": "Team Leader",
+                                    "skill_match_score": 0.6667,
+                                    "required_macro_skills": [
+                                        "Project and Program Management",
+                                        "Digital Transformation and Process Improvement",
+                                        "Risk, Uncertainty and Scenario Analysis"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "project and program management",
+                                        "risk, uncertainty and scenario analysis"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-23",
+                                        "2026-06-24",
+                                        "2026-06-25",
+                                        "2026-06-26"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Lead Software Architect / Full-Stack Developer",
+                                    "position": "Lead Specialist",
+                                    "employee_id": "wesley.moraes@tcc2026.com.br",
+                                    "employee_name": "Wesley Moraes",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Project and Program Management",
+                                        "Software Development and Engineering"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "project and program management"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-23",
+                                        "2026-06-24"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 3,
+                            "cost": 6240.0,
+                            "real_cost": 3072.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Project Manager",
+                                    "position": "Team Leader",
+                                    "employee_id": "sandra.ramos@tcc2026.com.br",
+                                    "employee_name": "Sandra Ramos",
+                                    "employee_position": "Team Leader",
+                                    "skill_match_score": 0.6667,
+                                    "required_macro_skills": [
+                                        "Project and Program Management",
+                                        "Digital Transformation and Process Improvement",
+                                        "Risk, Uncertainty and Scenario Analysis"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "project and program management",
+                                        "risk, uncertainty and scenario analysis"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-23",
+                                        "2026-06-24",
+                                        "2026-06-25",
+                                        "2026-06-26"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Lead Software Architect / Full-Stack Developer",
+                                    "position": "Lead Specialist",
+                                    "employee_id": "rodrigo.machado@tcc2026.com.br",
+                                    "employee_name": "Rodrigo Machado",
+                                    "employee_position": "Specialist",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Project and Program Management",
+                                        "Software Development and Engineering"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "software development and engineering"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-23",
+                                        "2026-06-24"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "order": 2,
+            "name": "First Partial Report – Energy Market Analysis Document",
+            "deadline_in_days": 50,
+            "total_cost_usd": 19440.0,
+            "activities": [
+                {
+                    "name": "Research and documentation of LAC regional energy markets",
+                    "start_day": 20,
+                    "end_day": 41,
+                    "status": "✓ Fully staffed",
+                    "solutions": [
+                        {
+                            "rank": 1,
+                            "cost": 17920.0,
+                            "real_cost": 8400.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Senior Energy Market Analyst",
+                                    "position": "Expert",
+                                    "employee_id": "sofia.oliveira@tcc2026.com.br",
+                                    "employee_name": "Sofia Oliveira",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 0.6667,
+                                    "required_macro_skills": [
+                                        "International and Regional Studies",
+                                        "Regulatory, Policy and Public Affairs",
+                                        "Research, Academia and Technical Writing"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "international and regional studies",
+                                        "regulatory, policy and public affairs"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-26",
+                                        "2026-06-29",
+                                        "2026-06-30",
+                                        "2026-07-01",
+                                        "2026-07-02",
+                                        "2026-07-03",
+                                        "2026-07-06",
+                                        "2026-07-07"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Energy Market Analyst",
+                                    "position": "Lead Analyst",
+                                    "employee_id": "alexandre.brito@tcc2026.com.br",
+                                    "employee_name": "Alexandre Brito",
+                                    "employee_position": "Intern",
+                                    "skill_match_score": 0.75,
+                                    "required_macro_skills": [
+                                        "Power Market Analysis and Market Design",
+                                        "Research Methods and Statistical Analysis",
+                                        "Research, Academia and Technical Writing",
+                                        "International and Regional Studies"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "power market analysis and market design",
+                                        "research methods and statistical analysis",
+                                        "research, academia and technical writing"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-26",
+                                        "2026-06-29",
+                                        "2026-06-30",
+                                        "2026-07-01",
+                                        "2026-07-02",
+                                        "2026-07-03",
+                                        "2026-07-06",
+                                        "2026-07-07",
+                                        "2026-07-08",
+                                        "2026-07-09",
+                                        "2026-07-10",
+                                        "2026-07-13",
+                                        "2026-07-14",
+                                        "2026-07-15",
+                                        "2026-07-16"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 2,
+                            "cost": 17920.0,
+                            "real_cost": 8400.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Senior Energy Market Analyst",
+                                    "position": "Expert",
+                                    "employee_id": "antonio.soares@tcc2026.com.br",
+                                    "employee_name": "Antonio Soares",
+                                    "employee_position": "Expert",
+                                    "skill_match_score": 0.6667,
+                                    "required_macro_skills": [
+                                        "International and Regional Studies",
+                                        "Regulatory, Policy and Public Affairs",
+                                        "Research, Academia and Technical Writing"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "international and regional studies",
+                                        "regulatory, policy and public affairs"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-26",
+                                        "2026-06-29",
+                                        "2026-06-30",
+                                        "2026-07-01",
+                                        "2026-07-02",
+                                        "2026-07-03",
+                                        "2026-07-06",
+                                        "2026-07-07"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Energy Market Analyst",
+                                    "position": "Lead Analyst",
+                                    "employee_id": "alexandre.brito@tcc2026.com.br",
+                                    "employee_name": "Alexandre Brito",
+                                    "employee_position": "Intern",
+                                    "skill_match_score": 0.75,
+                                    "required_macro_skills": [
+                                        "Power Market Analysis and Market Design",
+                                        "Research Methods and Statistical Analysis",
+                                        "Research, Academia and Technical Writing",
+                                        "International and Regional Studies"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "power market analysis and market design",
+                                        "research methods and statistical analysis",
+                                        "research, academia and technical writing"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-26",
+                                        "2026-06-29",
+                                        "2026-06-30",
+                                        "2026-07-01",
+                                        "2026-07-02",
+                                        "2026-07-03",
+                                        "2026-07-06",
+                                        "2026-07-07",
+                                        "2026-07-08",
+                                        "2026-07-09",
+                                        "2026-07-10",
+                                        "2026-07-13",
+                                        "2026-07-14",
+                                        "2026-07-15",
+                                        "2026-07-16"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 3,
+                            "cost": 18720.001,
+                            "real_cost": 14880.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Senior Energy Market Analyst",
+                                    "position": "Expert",
+                                    "employee_id": "sofia.oliveira@tcc2026.com.br",
+                                    "employee_name": "Sofia Oliveira",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 0.6667,
+                                    "required_macro_skills": [
+                                        "International and Regional Studies",
+                                        "Regulatory, Policy and Public Affairs",
+                                        "Research, Academia and Technical Writing"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "international and regional studies",
+                                        "regulatory, policy and public affairs"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-26",
+                                        "2026-06-29",
+                                        "2026-06-30",
+                                        "2026-07-01",
+                                        "2026-07-02",
+                                        "2026-07-03",
+                                        "2026-07-06",
+                                        "2026-07-07"
+                                    ]
+                                }
+                            ],
+                            "gaps": [
+                                {
+                                    "slot_index": 1,
+                                    "role": "Energy Market Analyst",
+                                    "required_position": "Lead Analyst",
+                                    "required_macro_skills": [
+                                        "Power Market Analysis and Market Design",
+                                        "Research Methods and Statistical Analysis",
+                                        "Research, Academia and Technical Writing",
+                                        "International and Regional Studies"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Research and documentation of international reference markets",
+                    "start_day": 41,
+                    "end_day": 55,
+                    "status": "✓ Fully staffed",
+                    "solutions": [
+                        {
+                            "rank": 1,
+                            "cost": 20480.0,
+                            "real_cost": 4000.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Senior Energy Market Analyst",
+                                    "position": "Expert",
+                                    "employee_id": "wesley.moraes@tcc2026.com.br",
+                                    "employee_name": "Wesley Moraes",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 0.6667,
+                                    "required_macro_skills": [
+                                        "International and Regional Studies",
+                                        "Power Market Analysis and Market Design",
+                                        "Research, Academia and Technical Writing"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "international and regional studies",
+                                        "power market analysis and market design"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-07-17",
+                                        "2026-07-20",
+                                        "2026-07-21",
+                                        "2026-07-22",
+                                        "2026-07-23",
+                                        "2026-07-24"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Energy Market Analyst",
+                                    "position": "Lead Analyst",
+                                    "employee_id": "natalia.pereira@tcc2026.com.br",
+                                    "employee_name": "Natalia Pereira",
+                                    "employee_position": "Lead Analyst",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Research, Academia and Technical Writing",
+                                        "International and Regional Studies"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "international and regional studies"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-07-17",
+                                        "2026-07-20",
+                                        "2026-07-21",
+                                        "2026-07-22",
+                                        "2026-07-23",
+                                        "2026-07-24",
+                                        "2026-07-27",
+                                        "2026-07-28",
+                                        "2026-07-29",
+                                        "2026-07-30"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 2,
+                            "cost": 20480.0,
+                            "real_cost": 4000.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Senior Energy Market Analyst",
+                                    "position": "Expert",
+                                    "employee_id": "renato.nogueira@tcc2026.com.br",
+                                    "employee_name": "Renato Nogueira",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 0.6667,
+                                    "required_macro_skills": [
+                                        "International and Regional Studies",
+                                        "Power Market Analysis and Market Design",
+                                        "Research, Academia and Technical Writing"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "international and regional studies",
+                                        "power market analysis and market design"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-07-17",
+                                        "2026-07-20",
+                                        "2026-07-21",
+                                        "2026-07-22",
+                                        "2026-07-23",
+                                        "2026-07-24"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Energy Market Analyst",
+                                    "position": "Lead Analyst",
+                                    "employee_id": "natalia.pereira@tcc2026.com.br",
+                                    "employee_name": "Natalia Pereira",
+                                    "employee_position": "Lead Analyst",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Research, Academia and Technical Writing",
+                                        "International and Regional Studies"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "international and regional studies"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-07-17",
+                                        "2026-07-20",
+                                        "2026-07-21",
+                                        "2026-07-22",
+                                        "2026-07-23",
+                                        "2026-07-24",
+                                        "2026-07-27",
+                                        "2026-07-28",
+                                        "2026-07-29",
+                                        "2026-07-30"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 3,
+                            "cost": 20480.0,
+                            "real_cost": 7360.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Senior Energy Market Analyst",
+                                    "position": "Expert",
+                                    "employee_id": "sofia.oliveira@tcc2026.com.br",
+                                    "employee_name": "Sofia Oliveira",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 0.3333,
+                                    "required_macro_skills": [
+                                        "International and Regional Studies",
+                                        "Power Market Analysis and Market Design",
+                                        "Research, Academia and Technical Writing"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "international and regional studies"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-07-17",
+                                        "2026-07-20",
+                                        "2026-07-21",
+                                        "2026-07-22",
+                                        "2026-07-23",
+                                        "2026-07-24"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Energy Market Analyst",
+                                    "position": "Lead Analyst",
+                                    "employee_id": "natalia.pereira@tcc2026.com.br",
+                                    "employee_name": "Natalia Pereira",
+                                    "employee_position": "Lead Analyst",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Research, Academia and Technical Writing",
+                                        "International and Regional Studies"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "international and regional studies"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-07-17",
+                                        "2026-07-20",
+                                        "2026-07-21",
+                                        "2026-07-22",
+                                        "2026-07-23",
+                                        "2026-07-24",
+                                        "2026-07-27",
+                                        "2026-07-28",
+                                        "2026-07-29",
+                                        "2026-07-30"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Market parameter inventory and standardisation",
+                    "start_day": 55,
+                    "end_day": 66,
+                    "status": "✓ Fully staffed",
+                    "solutions": [
+                        {
+                            "rank": 1,
+                            "cost": 14480.0,
+                            "real_cost": 6240.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Senior Energy Market Analyst",
+                                    "position": "Expert",
+                                    "employee_id": "patricia.gomes@tcc2026.com.br",
+                                    "employee_name": "Patricia Gomes",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 0.3333,
+                                    "required_macro_skills": [
+                                        "Data Management, Databases and BI",
+                                        "Business Analysis and Consulting",
+                                        "Project and Program Management"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "business analysis and consulting"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-07-31",
+                                        "2026-08-03",
+                                        "2026-08-04",
+                                        "2026-08-05"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Energy Market Analyst",
+                                    "position": "Lead Analyst",
+                                    "employee_id": "paulo.silva@tcc2026.com.br",
+                                    "employee_name": "Paulo Silva",
+                                    "employee_position": "Lead Analyst",
+                                    "skill_match_score": 0.6667,
+                                    "required_macro_skills": [
+                                        "Research Methods and Statistical Analysis",
+                                        "Data Management, Databases and BI",
+                                        "Project and Program Management"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "project and program management",
+                                        "research methods and statistical analysis"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-07-31",
+                                        "2026-08-03",
+                                        "2026-08-04",
+                                        "2026-08-05",
+                                        "2026-08-06",
+                                        "2026-08-07",
+                                        "2026-08-10"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 2,
+                                    "role": "Project Manager",
+                                    "position": "Team Leader",
+                                    "employee_id": "sandra.ramos@tcc2026.com.br",
+                                    "employee_name": "Sandra Ramos",
+                                    "employee_position": "Team Leader",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Project and Program Management"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "project and program management"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-07-31",
+                                        "2026-08-03"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 2,
+                            "cost": 14480.0,
+                            "real_cost": 6240.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Senior Energy Market Analyst",
+                                    "position": "Expert",
+                                    "employee_id": "sofia.oliveira@tcc2026.com.br",
+                                    "employee_name": "Sofia Oliveira",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 0.3333,
+                                    "required_macro_skills": [
+                                        "Data Management, Databases and BI",
+                                        "Business Analysis and Consulting",
+                                        "Project and Program Management"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "project and program management"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-07-31",
+                                        "2026-08-03",
+                                        "2026-08-04",
+                                        "2026-08-05"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Energy Market Analyst",
+                                    "position": "Lead Analyst",
+                                    "employee_id": "paulo.silva@tcc2026.com.br",
+                                    "employee_name": "Paulo Silva",
+                                    "employee_position": "Lead Analyst",
+                                    "skill_match_score": 0.6667,
+                                    "required_macro_skills": [
+                                        "Research Methods and Statistical Analysis",
+                                        "Data Management, Databases and BI",
+                                        "Project and Program Management"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "project and program management",
+                                        "research methods and statistical analysis"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-07-31",
+                                        "2026-08-03",
+                                        "2026-08-04",
+                                        "2026-08-05",
+                                        "2026-08-06",
+                                        "2026-08-07",
+                                        "2026-08-10"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 2,
+                                    "role": "Project Manager",
+                                    "position": "Team Leader",
+                                    "employee_id": "sandra.ramos@tcc2026.com.br",
+                                    "employee_name": "Sandra Ramos",
+                                    "employee_position": "Team Leader",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Project and Program Management"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "project and program management"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-07-31",
+                                        "2026-08-03"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 3,
+                            "cost": 14480.0,
+                            "real_cost": 4000.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Senior Energy Market Analyst",
+                                    "position": "Expert",
+                                    "employee_id": "marcelo.teixeira@tcc2026.com.br",
+                                    "employee_name": "Marcelo Teixeira",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 0.6667,
+                                    "required_macro_skills": [
+                                        "Data Management, Databases and BI",
+                                        "Business Analysis and Consulting",
+                                        "Project and Program Management"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "data management, databases and bi",
+                                        "project and program management"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-07-31",
+                                        "2026-08-03",
+                                        "2026-08-04",
+                                        "2026-08-05"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Energy Market Analyst",
+                                    "position": "Lead Analyst",
+                                    "employee_id": "paulo.silva@tcc2026.com.br",
+                                    "employee_name": "Paulo Silva",
+                                    "employee_position": "Lead Analyst",
+                                    "skill_match_score": 0.6667,
+                                    "required_macro_skills": [
+                                        "Research Methods and Statistical Analysis",
+                                        "Data Management, Databases and BI",
+                                        "Project and Program Management"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "project and program management",
+                                        "research methods and statistical analysis"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-07-31",
+                                        "2026-08-03",
+                                        "2026-08-04",
+                                        "2026-08-05",
+                                        "2026-08-06",
+                                        "2026-08-07",
+                                        "2026-08-10"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 2,
+                                    "role": "Project Manager",
+                                    "position": "Team Leader",
+                                    "employee_id": "sandra.ramos@tcc2026.com.br",
+                                    "employee_name": "Sandra Ramos",
+                                    "employee_position": "Team Leader",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Project and Program Management"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "project and program management"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-07-31",
+                                        "2026-08-03"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Portal general wireframe/sketch design",
+                    "start_day": 66,
+                    "end_day": 69,
+                    "status": "✓ Fully staffed",
+                    "solutions": [
+                        {
+                            "rank": 1,
+                            "cost": 1728.0,
+                            "real_cost": 800.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "UX/UI Designer & Frontend Developer",
+                                    "position": "Lead Analyst",
+                                    "employee_id": "maria.fernandes@tcc2026.com.br",
+                                    "employee_name": "Maria Fernandes",
+                                    "employee_position": "Lead Analyst",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Software Development and Engineering",
+                                        "Business Analysis and Consulting"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "business analysis and consulting"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-08-11",
+                                        "2026-08-12",
+                                        "2026-08-13"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Business Analyst / Documentation & QA Specialist",
+                                    "position": "Specialist",
+                                    "employee_id": "eduardo.sanchez@tcc2026.com.br",
+                                    "employee_name": "Eduardo Sanchez",
+                                    "employee_position": "Lead Analyst",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Business Analysis and Consulting"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "business analysis and consulting"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-08-11",
+                                        "2026-08-12"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 2,
+                            "cost": 1728.0,
+                            "real_cost": 800.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "UX/UI Designer & Frontend Developer",
+                                    "position": "Lead Analyst",
+                                    "employee_id": "eduardo.sanchez@tcc2026.com.br",
+                                    "employee_name": "Eduardo Sanchez",
+                                    "employee_position": "Lead Analyst",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Software Development and Engineering",
+                                        "Business Analysis and Consulting"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "business analysis and consulting"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-08-11",
+                                        "2026-08-12",
+                                        "2026-08-13"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Business Analyst / Documentation & QA Specialist",
+                                    "position": "Specialist",
+                                    "employee_id": "maria.fernandes@tcc2026.com.br",
+                                    "employee_name": "Maria Fernandes",
+                                    "employee_position": "Lead Analyst",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Business Analysis and Consulting"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "business analysis and consulting"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-08-11",
+                                        "2026-08-12"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 3,
+                            "cost": 1728.0,
+                            "real_cost": 800.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "UX/UI Designer & Frontend Developer",
+                                    "position": "Lead Analyst",
+                                    "employee_id": "diego.martins@tcc2026.com.br",
+                                    "employee_name": "Diego Martins",
+                                    "employee_position": "Lead Analyst",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Software Development and Engineering",
+                                        "Business Analysis and Consulting"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "software development and engineering"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-08-11",
+                                        "2026-08-12",
+                                        "2026-08-13"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Business Analyst / Documentation & QA Specialist",
+                                    "position": "Specialist",
+                                    "employee_id": "eduardo.sanchez@tcc2026.com.br",
+                                    "employee_name": "Eduardo Sanchez",
+                                    "employee_position": "Lead Analyst",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Business Analysis and Consulting"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "business analysis and consulting"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-08-11",
+                                        "2026-08-12"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "order": 3,
+            "name": "Second Partial Report – Portal Design, Architecture & Prototype",
+            "deadline_in_days": 75,
+            "total_cost_usd": 10368.0,
+            "activities": [
+                {
+                    "name": "Detailed analysis and prototype design",
+                    "start_day": 69,
+                    "end_day": 83,
+                    "status": "✓ Fully staffed",
+                    "solutions": [
+                        {
+                            "rank": 1,
+                            "cost": 7472.0,
+                            "real_cost": 4336.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "UX/UI Designer & Frontend Developer",
+                                    "position": "Lead Analyst",
+                                    "employee_id": "diego.martins@tcc2026.com.br",
+                                    "employee_name": "Diego Martins",
+                                    "employee_position": "Lead Analyst",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Software Development and Engineering",
+                                        "International and Regional Studies"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "software development and engineering"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-08-14",
+                                        "2026-08-17",
+                                        "2026-08-18",
+                                        "2026-08-19",
+                                        "2026-08-20",
+                                        "2026-08-21",
+                                        "2026-08-24",
+                                        "2026-08-25",
+                                        "2026-08-26",
+                                        "2026-08-27"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Business Analyst / Documentation & QA Specialist",
+                                    "position": "Specialist",
+                                    "employee_id": "miguel.ferreira@tcc2026.com.br",
+                                    "employee_name": "Miguel Ferreira",
+                                    "employee_position": "Specialist",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Business Analysis and Consulting",
+                                        "Quality Assurance, Testing and Validation"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "quality assurance, testing and validation"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-08-14",
+                                        "2026-08-17",
+                                        "2026-08-18",
+                                        "2026-08-19",
+                                        "2026-08-20",
+                                        "2026-08-21"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 2,
+                                    "role": "Lead Software Architect / Full-Stack Developer",
+                                    "position": "Lead Specialist",
+                                    "employee_id": "marcelo.teixeira@tcc2026.com.br",
+                                    "employee_name": "Marcelo Teixeira",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Quality Assurance, Testing and Validation",
+                                        "Data Management, Databases and BI"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "data management, databases and bi",
+                                        "quality assurance, testing and validation"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-08-14",
+                                        "2026-08-17",
+                                        "2026-08-18"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 2,
+                            "cost": 7472.0,
+                            "real_cost": 4336.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "UX/UI Designer & Frontend Developer",
+                                    "position": "Lead Analyst",
+                                    "employee_id": "diego.martins@tcc2026.com.br",
+                                    "employee_name": "Diego Martins",
+                                    "employee_position": "Lead Analyst",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Software Development and Engineering",
+                                        "International and Regional Studies"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "software development and engineering"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-08-14",
+                                        "2026-08-17",
+                                        "2026-08-18",
+                                        "2026-08-19",
+                                        "2026-08-20",
+                                        "2026-08-21",
+                                        "2026-08-24",
+                                        "2026-08-25",
+                                        "2026-08-26",
+                                        "2026-08-27"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Business Analyst / Documentation & QA Specialist",
+                                    "position": "Specialist",
+                                    "employee_id": "gustavo.goncalves@tcc2026.com.br",
+                                    "employee_name": "Gustavo Goncalves",
+                                    "employee_position": "Specialist",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Business Analysis and Consulting",
+                                        "Quality Assurance, Testing and Validation"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "quality assurance, testing and validation"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-08-14",
+                                        "2026-08-17",
+                                        "2026-08-18",
+                                        "2026-08-19",
+                                        "2026-08-20",
+                                        "2026-08-21"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 2,
+                                    "role": "Lead Software Architect / Full-Stack Developer",
+                                    "position": "Lead Specialist",
+                                    "employee_id": "marcelo.teixeira@tcc2026.com.br",
+                                    "employee_name": "Marcelo Teixeira",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Quality Assurance, Testing and Validation",
+                                        "Data Management, Databases and BI"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "data management, databases and bi",
+                                        "quality assurance, testing and validation"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-08-14",
+                                        "2026-08-17",
+                                        "2026-08-18"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 3,
+                            "cost": 7472.0,
+                            "real_cost": 4336.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "UX/UI Designer & Frontend Developer",
+                                    "position": "Lead Analyst",
+                                    "employee_id": "natalia.pereira@tcc2026.com.br",
+                                    "employee_name": "Natalia Pereira",
+                                    "employee_position": "Lead Analyst",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Software Development and Engineering",
+                                        "International and Regional Studies"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "international and regional studies"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-08-14",
+                                        "2026-08-17",
+                                        "2026-08-18",
+                                        "2026-08-19",
+                                        "2026-08-20",
+                                        "2026-08-21",
+                                        "2026-08-24",
+                                        "2026-08-25",
+                                        "2026-08-26",
+                                        "2026-08-27"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Business Analyst / Documentation & QA Specialist",
+                                    "position": "Specialist",
+                                    "employee_id": "gustavo.goncalves@tcc2026.com.br",
+                                    "employee_name": "Gustavo Goncalves",
+                                    "employee_position": "Specialist",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Business Analysis and Consulting",
+                                        "Quality Assurance, Testing and Validation"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "quality assurance, testing and validation"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-08-14",
+                                        "2026-08-17",
+                                        "2026-08-18",
+                                        "2026-08-19",
+                                        "2026-08-20",
+                                        "2026-08-21"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 2,
+                                    "role": "Lead Software Architect / Full-Stack Developer",
+                                    "position": "Lead Specialist",
+                                    "employee_id": "marcelo.teixeira@tcc2026.com.br",
+                                    "employee_name": "Marcelo Teixeira",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Quality Assurance, Testing and Validation",
+                                        "Data Management, Databases and BI"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "data management, databases and bi",
+                                        "quality assurance, testing and validation"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-08-14",
+                                        "2026-08-17",
+                                        "2026-08-18"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Technical architecture design",
+                    "start_day": 83,
+                    "end_day": 95,
+                    "status": "✓ Fully staffed",
+                    "solutions": [
+                        {
+                            "rank": 1,
+                            "cost": 4224.0,
+                            "real_cost": 3712.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Lead Software Architect / Full-Stack Developer",
+                                    "position": "Lead Specialist",
+                                    "employee_id": "marcelo.teixeira@tcc2026.com.br",
+                                    "employee_name": "Marcelo Teixeira",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Software Development and Engineering",
+                                        "Data Management, Databases and BI"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "data management, databases and bi",
+                                        "software development and engineering"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-08-28",
+                                        "2026-08-31",
+                                        "2026-09-01",
+                                        "2026-09-02",
+                                        "2026-09-03",
+                                        "2026-09-04",
+                                        "2026-09-07",
+                                        "2026-09-08"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Business Analyst / Documentation & QA Specialist",
+                                    "position": "Specialist",
+                                    "employee_id": "rodrigo.machado@tcc2026.com.br",
+                                    "employee_name": "Rodrigo Machado",
+                                    "employee_position": "Specialist",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Software Development and Engineering",
+                                        "Quality Assurance, Testing and Validation"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "software development and engineering"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-08-28",
+                                        "2026-08-31"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 2,
+                            "cost": 4224.0,
+                            "real_cost": 3712.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Lead Software Architect / Full-Stack Developer",
+                                    "position": "Lead Specialist",
+                                    "employee_id": "marcelo.teixeira@tcc2026.com.br",
+                                    "employee_name": "Marcelo Teixeira",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Software Development and Engineering",
+                                        "Data Management, Databases and BI"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "data management, databases and bi",
+                                        "software development and engineering"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-08-28",
+                                        "2026-08-31",
+                                        "2026-09-01",
+                                        "2026-09-02",
+                                        "2026-09-03",
+                                        "2026-09-04",
+                                        "2026-09-07",
+                                        "2026-09-08"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Business Analyst / Documentation & QA Specialist",
+                                    "position": "Specialist",
+                                    "employee_id": "gustavo.goncalves@tcc2026.com.br",
+                                    "employee_name": "Gustavo Goncalves",
+                                    "employee_position": "Specialist",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Software Development and Engineering",
+                                        "Quality Assurance, Testing and Validation"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "quality assurance, testing and validation"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-08-28",
+                                        "2026-08-31"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 3,
+                            "cost": 4224.0,
+                            "real_cost": 3712.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Lead Software Architect / Full-Stack Developer",
+                                    "position": "Lead Specialist",
+                                    "employee_id": "marcelo.teixeira@tcc2026.com.br",
+                                    "employee_name": "Marcelo Teixeira",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Software Development and Engineering",
+                                        "Data Management, Databases and BI"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "data management, databases and bi",
+                                        "software development and engineering"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-08-28",
+                                        "2026-08-31",
+                                        "2026-09-01",
+                                        "2026-09-02",
+                                        "2026-09-03",
+                                        "2026-09-04",
+                                        "2026-09-07",
+                                        "2026-09-08"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Business Analyst / Documentation & QA Specialist",
+                                    "position": "Specialist",
+                                    "employee_id": "miguel.ferreira@tcc2026.com.br",
+                                    "employee_name": "Miguel Ferreira",
+                                    "employee_position": "Specialist",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Software Development and Engineering",
+                                        "Quality Assurance, Testing and Validation"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "quality assurance, testing and validation"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-08-28",
+                                        "2026-08-31"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Interactive world map application development",
+                    "start_day": 95,
+                    "end_day": 104,
+                    "status": "✓ Fully staffed",
+                    "solutions": [
+                        {
+                            "rank": 1,
+                            "cost": 4640.0,
+                            "real_cost": 2320.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "UX/UI Designer & Frontend Developer",
+                                    "position": "Lead Analyst",
+                                    "employee_id": "diego.martins@tcc2026.com.br",
+                                    "employee_name": "Diego Martins",
+                                    "employee_position": "Lead Analyst",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Software Development and Engineering",
+                                        "GIS, Spatial and Mapping Analysis"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "software development and engineering"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-09-09",
+                                        "2026-09-10",
+                                        "2026-09-11",
+                                        "2026-09-14",
+                                        "2026-09-15",
+                                        "2026-09-16",
+                                        "2026-09-17"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Lead Software Architect / Full-Stack Developer",
+                                    "position": "Lead Specialist",
+                                    "employee_id": "marcelo.teixeira@tcc2026.com.br",
+                                    "employee_name": "Marcelo Teixeira",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "GIS, Spatial and Mapping Analysis",
+                                        "Software Development and Engineering"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "software development and engineering"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-09-09",
+                                        "2026-09-10",
+                                        "2026-09-11"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 2,
+                            "cost": 5120.0,
+                            "real_cost": 4000.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "UX/UI Designer & Frontend Developer",
+                                    "position": "Lead Analyst",
+                                    "employee_id": "diego.martins@tcc2026.com.br",
+                                    "employee_name": "Diego Martins",
+                                    "employee_position": "Lead Analyst",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Software Development and Engineering",
+                                        "GIS, Spatial and Mapping Analysis"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "software development and engineering"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-09-09",
+                                        "2026-09-10",
+                                        "2026-09-11",
+                                        "2026-09-14",
+                                        "2026-09-15",
+                                        "2026-09-16",
+                                        "2026-09-17"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Lead Software Architect / Full-Stack Developer",
+                                    "position": "Lead Specialist",
+                                    "employee_id": "carlos.mendes@tcc2026.com.br",
+                                    "employee_name": "Carlos Mendes",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "GIS, Spatial and Mapping Analysis",
+                                        "Software Development and Engineering"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "gis, spatial and mapping analysis",
+                                        "software development and engineering"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-09-09",
+                                        "2026-09-10",
+                                        "2026-09-11"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 3,
+                            "cost": 5760.0,
+                            "real_cost": 1872.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "UX/UI Designer & Frontend Developer",
+                                    "position": "Lead Analyst",
+                                    "employee_id": "gabriel.reis@tcc2026.com.br",
+                                    "employee_name": "Gabriel Reis",
+                                    "employee_position": "Analyst",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Software Development and Engineering",
+                                        "GIS, Spatial and Mapping Analysis"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "software development and engineering"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-09-09",
+                                        "2026-09-10",
+                                        "2026-09-11",
+                                        "2026-09-14",
+                                        "2026-09-15",
+                                        "2026-09-16",
+                                        "2026-09-17"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Lead Software Architect / Full-Stack Developer",
+                                    "position": "Lead Specialist",
+                                    "employee_id": "marcelo.teixeira@tcc2026.com.br",
+                                    "employee_name": "Marcelo Teixeira",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "GIS, Spatial and Mapping Analysis",
+                                        "Software Development and Engineering"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "software development and engineering"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-09-09",
+                                        "2026-09-10",
+                                        "2026-09-11"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "order": 4,
+            "name": "Final Report – Fully Operational Portal + Documentation",
+            "deadline_in_days": 120,
+            "total_cost_usd": 22528.0,
+            "activities": [
+                {
+                    "name": "Portal development – backend and CMS",
+                    "start_day": 104,
+                    "end_day": 125,
+                    "status": "✓ Fully staffed",
+                    "solutions": [
+                        {
+                            "rank": 1,
+                            "cost": 6000.0,
+                            "real_cost": 6000.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Lead Software Architect / Full-Stack Developer",
+                                    "position": "Lead Specialist",
+                                    "employee_id": "marcelo.teixeira@tcc2026.com.br",
+                                    "employee_name": "Marcelo Teixeira",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Software Development and Engineering",
+                                        "Data Management, Databases and BI"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "data management, databases and bi",
+                                        "software development and engineering"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-09-18",
+                                        "2026-09-21",
+                                        "2026-09-22",
+                                        "2026-09-23",
+                                        "2026-09-24",
+                                        "2026-09-25",
+                                        "2026-09-28",
+                                        "2026-09-29",
+                                        "2026-09-30",
+                                        "2026-10-01",
+                                        "2026-10-02",
+                                        "2026-10-05",
+                                        "2026-10-06",
+                                        "2026-10-07",
+                                        "2026-10-08"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 2,
+                            "cost": 14400.0,
+                            "real_cost": 14400.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Lead Software Architect / Full-Stack Developer",
+                                    "position": "Lead Specialist",
+                                    "employee_id": "carlos.mendes@tcc2026.com.br",
+                                    "employee_name": "Carlos Mendes",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Software Development and Engineering",
+                                        "Data Management, Databases and BI"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "data management, databases and bi",
+                                        "software development and engineering"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-09-18",
+                                        "2026-09-21",
+                                        "2026-09-22",
+                                        "2026-09-23",
+                                        "2026-09-24",
+                                        "2026-09-25",
+                                        "2026-09-28",
+                                        "2026-09-29",
+                                        "2026-09-30",
+                                        "2026-10-01",
+                                        "2026-10-02",
+                                        "2026-10-05",
+                                        "2026-10-06",
+                                        "2026-10-07",
+                                        "2026-10-08"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 3,
+                            "cost": 18000.0,
+                            "real_cost": 3840.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Lead Software Architect / Full-Stack Developer",
+                                    "position": "Lead Specialist",
+                                    "employee_id": "rodrigo.machado@tcc2026.com.br",
+                                    "employee_name": "Rodrigo Machado",
+                                    "employee_position": "Specialist",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Software Development and Engineering",
+                                        "Data Management, Databases and BI"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "software development and engineering"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-09-18",
+                                        "2026-09-21",
+                                        "2026-09-22",
+                                        "2026-09-23",
+                                        "2026-09-24",
+                                        "2026-09-25",
+                                        "2026-09-28",
+                                        "2026-09-29",
+                                        "2026-09-30",
+                                        "2026-10-01",
+                                        "2026-10-02",
+                                        "2026-10-05",
+                                        "2026-10-06",
+                                        "2026-10-07",
+                                        "2026-10-08"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Portal development – frontend and responsive design",
+                    "start_day": 125,
+                    "end_day": 143,
+                    "status": "✓ Fully staffed",
+                    "solutions": [
+                        {
+                            "rank": 1,
+                            "cost": 6208.0,
+                            "real_cost": 4672.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "UX/UI Designer & Frontend Developer",
+                                    "position": "Lead Analyst",
+                                    "employee_id": "gustavo.goncalves@tcc2026.com.br",
+                                    "employee_name": "Gustavo Goncalves",
+                                    "employee_position": "Specialist",
+                                    "skill_match_score": 0.6667,
+                                    "required_macro_skills": [
+                                        "Software Development and Engineering",
+                                        "Quality Assurance, Testing and Validation",
+                                        "International and Regional Studies"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "international and regional studies",
+                                        "quality assurance, testing and validation"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-10-09",
+                                        "2026-10-12",
+                                        "2026-10-13",
+                                        "2026-10-14",
+                                        "2026-10-15",
+                                        "2026-10-16",
+                                        "2026-10-19",
+                                        "2026-10-20",
+                                        "2026-10-21",
+                                        "2026-10-22",
+                                        "2026-10-23",
+                                        "2026-10-26"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Lead Software Architect / Full-Stack Developer",
+                                    "position": "Lead Specialist",
+                                    "employee_id": "marcelo.teixeira@tcc2026.com.br",
+                                    "employee_name": "Marcelo Teixeira",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Software Development and Engineering"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "software development and engineering"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-10-09",
+                                        "2026-10-12",
+                                        "2026-10-13",
+                                        "2026-10-14"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 2,
+                            "cost": 7008.0,
+                            "real_cost": 4096.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "UX/UI Designer & Frontend Developer",
+                                    "position": "Lead Analyst",
+                                    "employee_id": "gustavo.goncalves@tcc2026.com.br",
+                                    "employee_name": "Gustavo Goncalves",
+                                    "employee_position": "Specialist",
+                                    "skill_match_score": 0.6667,
+                                    "required_macro_skills": [
+                                        "Software Development and Engineering",
+                                        "Quality Assurance, Testing and Validation",
+                                        "International and Regional Studies"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "international and regional studies",
+                                        "quality assurance, testing and validation"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-10-09",
+                                        "2026-10-12",
+                                        "2026-10-13",
+                                        "2026-10-14",
+                                        "2026-10-15",
+                                        "2026-10-16",
+                                        "2026-10-19",
+                                        "2026-10-20",
+                                        "2026-10-21",
+                                        "2026-10-22",
+                                        "2026-10-23",
+                                        "2026-10-26"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Lead Software Architect / Full-Stack Developer",
+                                    "position": "Lead Specialist",
+                                    "employee_id": "rodrigo.machado@tcc2026.com.br",
+                                    "employee_name": "Rodrigo Machado",
+                                    "employee_position": "Specialist",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Software Development and Engineering"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "software development and engineering"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-10-09",
+                                        "2026-10-12",
+                                        "2026-10-13",
+                                        "2026-10-14"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 3,
+                            "cost": 7360.0,
+                            "real_cost": 3520.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "UX/UI Designer & Frontend Developer",
+                                    "position": "Lead Analyst",
+                                    "employee_id": "diego.martins@tcc2026.com.br",
+                                    "employee_name": "Diego Martins",
+                                    "employee_position": "Lead Analyst",
+                                    "skill_match_score": 0.3333,
+                                    "required_macro_skills": [
+                                        "Software Development and Engineering",
+                                        "Quality Assurance, Testing and Validation",
+                                        "International and Regional Studies"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "software development and engineering"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-10-09",
+                                        "2026-10-12",
+                                        "2026-10-13",
+                                        "2026-10-14",
+                                        "2026-10-15",
+                                        "2026-10-16",
+                                        "2026-10-19",
+                                        "2026-10-20",
+                                        "2026-10-21",
+                                        "2026-10-22",
+                                        "2026-10-23",
+                                        "2026-10-26"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Lead Software Architect / Full-Stack Developer",
+                                    "position": "Lead Specialist",
+                                    "employee_id": "marcelo.teixeira@tcc2026.com.br",
+                                    "employee_name": "Marcelo Teixeira",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Software Development and Engineering"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "software development and engineering"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-10-09",
+                                        "2026-10-12",
+                                        "2026-10-13",
+                                        "2026-10-14"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Content loading and value-added information publication",
+                    "start_day": 143,
+                    "end_day": 153,
+                    "status": "✓ Fully staffed",
+                    "solutions": [
+                        {
+                            "rank": 1,
+                            "cost": 8320.0,
+                            "real_cost": 2480.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Energy Market Analyst",
+                                    "position": "Lead Analyst",
+                                    "employee_id": "isabella.costa@tcc2026.com.br",
+                                    "employee_name": "Isabella Costa",
+                                    "employee_position": "Lead Analyst",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Digital Transformation and Process Improvement",
+                                        "Power Market Analysis and Market Design",
+                                        "Quality Assurance, Testing and Validation",
+                                        "Data Management, Databases and BI"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "digital transformation and process improvement",
+                                        "power market analysis and market design"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-10-27",
+                                        "2026-10-28",
+                                        "2026-10-29",
+                                        "2026-10-30",
+                                        "2026-11-02",
+                                        "2026-11-03",
+                                        "2026-11-04",
+                                        "2026-11-05"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Senior Energy Market Analyst",
+                                    "position": "Expert",
+                                    "employee_id": "wesley.moraes@tcc2026.com.br",
+                                    "employee_name": "Wesley Moraes",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Quality Assurance, Testing and Validation"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "quality assurance, testing and validation"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-10-27",
+                                        "2026-10-28",
+                                        "2026-10-29"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 2,
+                            "cost": 8320.0,
+                            "real_cost": 2480.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Energy Market Analyst",
+                                    "position": "Lead Analyst",
+                                    "employee_id": "isabella.costa@tcc2026.com.br",
+                                    "employee_name": "Isabella Costa",
+                                    "employee_position": "Lead Analyst",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Digital Transformation and Process Improvement",
+                                        "Power Market Analysis and Market Design",
+                                        "Quality Assurance, Testing and Validation",
+                                        "Data Management, Databases and BI"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "digital transformation and process improvement",
+                                        "power market analysis and market design"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-10-27",
+                                        "2026-10-28",
+                                        "2026-10-29",
+                                        "2026-10-30",
+                                        "2026-11-02",
+                                        "2026-11-03",
+                                        "2026-11-04",
+                                        "2026-11-05"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Senior Energy Market Analyst",
+                                    "position": "Expert",
+                                    "employee_id": "marcelo.teixeira@tcc2026.com.br",
+                                    "employee_name": "Marcelo Teixeira",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Quality Assurance, Testing and Validation"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "quality assurance, testing and validation"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-10-27",
+                                        "2026-10-28",
+                                        "2026-10-29"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 3,
+                            "cost": 9173.3333,
+                            "real_cost": 1584.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Energy Market Analyst",
+                                    "position": "Lead Analyst",
+                                    "employee_id": "beatriz.lemos@tcc2026.com.br",
+                                    "employee_name": "Beatriz Lemos",
+                                    "employee_position": "Intern",
+                                    "skill_match_score": 0.75,
+                                    "required_macro_skills": [
+                                        "Digital Transformation and Process Improvement",
+                                        "Power Market Analysis and Market Design",
+                                        "Quality Assurance, Testing and Validation",
+                                        "Data Management, Databases and BI"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "data management, databases and bi",
+                                        "digital transformation and process improvement",
+                                        "quality assurance, testing and validation"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-10-27",
+                                        "2026-10-28",
+                                        "2026-10-29",
+                                        "2026-10-30",
+                                        "2026-11-02",
+                                        "2026-11-03",
+                                        "2026-11-04",
+                                        "2026-11-05"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Senior Energy Market Analyst",
+                                    "position": "Expert",
+                                    "employee_id": "marcelo.teixeira@tcc2026.com.br",
+                                    "employee_name": "Marcelo Teixeira",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Quality Assurance, Testing and Validation"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "quality assurance, testing and validation"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-10-27",
+                                        "2026-10-28",
+                                        "2026-10-29"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Testing, QA, and deployment",
+                    "start_day": 153,
+                    "end_day": 163,
+                    "status": "✓ Fully staffed",
+                    "solutions": [
+                        {
+                            "rank": 1,
+                            "cost": 4656.0,
+                            "real_cost": 4224.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Business Analyst / Documentation & QA Specialist",
+                                    "position": "Specialist",
+                                    "employee_id": "gustavo.goncalves@tcc2026.com.br",
+                                    "employee_name": "Gustavo Goncalves",
+                                    "employee_position": "Specialist",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Quality Assurance, Testing and Validation"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "quality assurance, testing and validation"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-11-06",
+                                        "2026-11-09",
+                                        "2026-11-10",
+                                        "2026-11-11",
+                                        "2026-11-12",
+                                        "2026-11-13"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Lead Software Architect / Full-Stack Developer",
+                                    "position": "Lead Specialist",
+                                    "employee_id": "marcelo.teixeira@tcc2026.com.br",
+                                    "employee_name": "Marcelo Teixeira",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Quality Assurance, Testing and Validation",
+                                        "Software Development and Engineering"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "quality assurance, testing and validation",
+                                        "software development and engineering"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-11-06",
+                                        "2026-11-09",
+                                        "2026-11-10",
+                                        "2026-11-11",
+                                        "2026-11-12",
+                                        "2026-11-13"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 2,
+                                    "role": "UX/UI Designer & Frontend Developer",
+                                    "position": "Lead Analyst",
+                                    "employee_id": "rafael.lima@tcc2026.com.br",
+                                    "employee_name": "Rafael Lima",
+                                    "employee_position": "Analyst",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Quality Assurance, Testing and Validation"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "quality assurance, testing and validation"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-11-06",
+                                        "2026-11-09",
+                                        "2026-11-10"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 2,
+                            "cost": 4656.0,
+                            "real_cost": 4224.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Business Analyst / Documentation & QA Specialist",
+                                    "position": "Specialist",
+                                    "employee_id": "miguel.ferreira@tcc2026.com.br",
+                                    "employee_name": "Miguel Ferreira",
+                                    "employee_position": "Specialist",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Quality Assurance, Testing and Validation"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "quality assurance, testing and validation"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-11-06",
+                                        "2026-11-09",
+                                        "2026-11-10",
+                                        "2026-11-11",
+                                        "2026-11-12",
+                                        "2026-11-13"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Lead Software Architect / Full-Stack Developer",
+                                    "position": "Lead Specialist",
+                                    "employee_id": "marcelo.teixeira@tcc2026.com.br",
+                                    "employee_name": "Marcelo Teixeira",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Quality Assurance, Testing and Validation",
+                                        "Software Development and Engineering"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "quality assurance, testing and validation",
+                                        "software development and engineering"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-11-06",
+                                        "2026-11-09",
+                                        "2026-11-10",
+                                        "2026-11-11",
+                                        "2026-11-12",
+                                        "2026-11-13"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 2,
+                                    "role": "UX/UI Designer & Frontend Developer",
+                                    "position": "Lead Analyst",
+                                    "employee_id": "erik.andrade@tcc2026.com.br",
+                                    "employee_name": "Erik Andrade",
+                                    "employee_position": "Analyst",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Quality Assurance, Testing and Validation"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "quality assurance, testing and validation"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-11-06",
+                                        "2026-11-09",
+                                        "2026-11-10"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 3,
+                            "cost": 4656.0,
+                            "real_cost": 4224.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Business Analyst / Documentation & QA Specialist",
+                                    "position": "Specialist",
+                                    "employee_id": "miguel.ferreira@tcc2026.com.br",
+                                    "employee_name": "Miguel Ferreira",
+                                    "employee_position": "Specialist",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Quality Assurance, Testing and Validation"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "quality assurance, testing and validation"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-11-06",
+                                        "2026-11-09",
+                                        "2026-11-10",
+                                        "2026-11-11",
+                                        "2026-11-12",
+                                        "2026-11-13"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Lead Software Architect / Full-Stack Developer",
+                                    "position": "Lead Specialist",
+                                    "employee_id": "marcelo.teixeira@tcc2026.com.br",
+                                    "employee_name": "Marcelo Teixeira",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Quality Assurance, Testing and Validation",
+                                        "Software Development and Engineering"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "quality assurance, testing and validation",
+                                        "software development and engineering"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-11-06",
+                                        "2026-11-09",
+                                        "2026-11-10",
+                                        "2026-11-11",
+                                        "2026-11-12",
+                                        "2026-11-13"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 2,
+                                    "role": "UX/UI Designer & Frontend Developer",
+                                    "position": "Lead Analyst",
+                                    "employee_id": "rafael.lima@tcc2026.com.br",
+                                    "employee_name": "Rafael Lima",
+                                    "employee_position": "Analyst",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Quality Assurance, Testing and Validation"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "quality assurance, testing and validation"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-11-06",
+                                        "2026-11-09",
+                                        "2026-11-10"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Training, documentation and handover",
+                    "start_day": 163,
+                    "end_day": 167,
+                    "status": "⚠ 1 role needs outsourcing",
+                    "solutions": [
+                        {
+                            "rank": 1,
+                            "cost": 5952.001,
+                            "real_cost": 5152.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 1,
+                                    "role": "Lead Software Architect / Full-Stack Developer",
+                                    "position": "Lead Specialist",
+                                    "employee_id": "marcelo.teixeira@tcc2026.com.br",
+                                    "employee_name": "Marcelo Teixeira",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Research, Academia and Technical Writing",
+                                        "Software Development and Engineering"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "software development and engineering"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-11-16",
+                                        "2026-11-17"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 2,
+                                    "role": "Project Manager",
+                                    "position": "Team Leader",
+                                    "employee_id": "sandra.ramos@tcc2026.com.br",
+                                    "employee_name": "Sandra Ramos",
+                                    "employee_position": "Team Leader",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Project and Program Management",
+                                        "Communication, Presentation and Documentation"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "communication, presentation and documentation",
+                                        "project and program management"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-11-16",
+                                        "2026-11-17"
+                                    ]
+                                }
+                            ],
+                            "gaps": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Business Analyst / Documentation & QA Specialist",
+                                    "required_position": "Specialist",
+                                    "required_macro_skills": [
+                                        "Research, Academia and Technical Writing",
+                                        "Communication, Presentation and Documentation",
+                                        "Technical Support and Training"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "rank": 2,
+                            "cost": 6592.001,
+                            "real_cost": 5792.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 1,
+                                    "role": "Lead Software Architect / Full-Stack Developer",
+                                    "position": "Lead Specialist",
+                                    "employee_id": "marcelo.teixeira@tcc2026.com.br",
+                                    "employee_name": "Marcelo Teixeira",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Research, Academia and Technical Writing",
+                                        "Software Development and Engineering"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "software development and engineering"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-11-16",
+                                        "2026-11-17"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 2,
+                                    "role": "Project Manager",
+                                    "position": "Team Leader",
+                                    "employee_id": "sergio.rodrigues@tcc2026.com.br",
+                                    "employee_name": "Sergio Rodrigues",
+                                    "employee_position": "Expert",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Project and Program Management",
+                                        "Communication, Presentation and Documentation"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "communication, presentation and documentation",
+                                        "project and program management"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-11-16",
+                                        "2026-11-17"
+                                    ]
+                                }
+                            ],
+                            "gaps": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Business Analyst / Documentation & QA Specialist",
+                                    "required_position": "Specialist",
+                                    "required_macro_skills": [
+                                        "Research, Academia and Technical Writing",
+                                        "Communication, Presentation and Documentation",
+                                        "Technical Support and Training"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "rank": 3,
+                            "cost": 6720.0,
+                            "real_cost": 2272.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Business Analyst / Documentation & QA Specialist",
+                                    "position": "Specialist",
+                                    "employee_id": "laura.santos@tcc2026.com.br",
+                                    "employee_name": "Laura Santos",
+                                    "employee_position": "Intern",
+                                    "skill_match_score": 0.6667,
+                                    "required_macro_skills": [
+                                        "Research, Academia and Technical Writing",
+                                        "Communication, Presentation and Documentation",
+                                        "Technical Support and Training"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "communication, presentation and documentation",
+                                        "research, academia and technical writing"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-11-16",
+                                        "2026-11-17",
+                                        "2026-11-18",
+                                        "2026-11-19"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Lead Software Architect / Full-Stack Developer",
+                                    "position": "Lead Specialist",
+                                    "employee_id": "marcelo.teixeira@tcc2026.com.br",
+                                    "employee_name": "Marcelo Teixeira",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Research, Academia and Technical Writing",
+                                        "Software Development and Engineering"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "software development and engineering"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-11-16",
+                                        "2026-11-17"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 2,
+                                    "role": "Project Manager",
+                                    "position": "Team Leader",
+                                    "employee_id": "sandra.ramos@tcc2026.com.br",
+                                    "employee_name": "Sandra Ramos",
+                                    "employee_position": "Team Leader",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Project and Program Management",
+                                        "Communication, Presentation and Documentation"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "communication, presentation and documentation",
+                                        "project and program management"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-11-16",
+                                        "2026-11-17"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

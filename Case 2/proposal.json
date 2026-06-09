@@ -1,0 +1,241 @@
+﻿{
+  "doc_name": "Annex B - RG-T3725-P007 - Terms of Reference.pdf",
+  "title": "Support to the Implementation of the More Lights for the Amazon Program",
+  "objectives": "Develop an optimal georeferenced electrification plan to facilitate universal access to electricity in remote and isolated areas of the Legal Amazon (Amazonas, Acre, Pará and Roraima), identifying and characterizing beneficiaries and determining the least-cost off-grid electrification solutions using individual photovoltaic systems and PV mini-grids.",
+  "deadline_in_days": 270,
+  "feasibility_assessment": {
+    "assessment": "Feasible with an experienced multidisciplinary team and adequate access to geospatial and socioeconomic datasets.",
+    "rationale": "The 9-month schedule is ambitious but achievable. The main risks are the availability and quality of geospatial and socioeconomic data, validation of beneficiary locations, integration of multiple data sources, and calibration of the georeferenced optimization model. The timeline is feasible provided that data access is secured early and stakeholder reviews occur according to schedule."
+  },
+  "budget": "USD 100,000 fixed-price consulting contract. Payments: Product 1 (10%), Products 2 and 3 (25%), Product 4 (25%), Product 5 (40%).",
+  "deliverables": [
+    {
+      "deliverable_order": 1,
+      "deliverable_name": "Inception Report and Detailed Work Plan",
+      "description": "Project initiation report describing methodology, data sources, work plan, schedule, stakeholder engagement strategy and quality assurance procedures.",
+      "deadline_in_days": 30,
+      "deliverable_duration_days": 20,
+      "activities": [
+        {
+          "activity": "Project Initiation",
+          "description": "Kick-off meetings, review of available information, definition of methodology, work plan and project governance.",
+          "estimated_duration_days": 20,
+          "team": [
+            {
+              "role": "Project Manager",
+              "position": "Team Leader",
+              "skills": "Project management, rural electrification planning, stakeholder coordination, reporting",
+              "estimated_person_days": 12
+            },
+            {
+              "role": "Geospatial Planning Expert",
+              "position": "Expert",
+              "skills": "GIS, remote sensing, geospatial database design",
+              "estimated_person_days": 8
+            },
+            {
+              "role": "Rural Electrification Expert",
+              "position": "Expert",
+              "skills": "Off-grid electrification, PV systems, mini-grids",
+              "estimated_person_days": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "deliverable_order": 2,
+      "deliverable_name": "Beneficiary Georeferenced Database",
+      "description": "Database containing location, quantification and characterization of potential beneficiaries, including households, schools, health centers and community facilities.",
+      "deadline_in_days": 90,
+      "deliverable_duration_days": 60,
+      "activities": [
+        {
+          "activity": "Beneficiary Identification",
+          "description": "Processing satellite imagery and available datasets to identify and georeference potential beneficiaries.",
+          "estimated_duration_days": 35,
+          "team": [
+            {
+              "role": "Geospatial Planning Expert",
+              "position": "Expert",
+              "skills": "Satellite imagery processing, GIS analysis, spatial databases",
+              "estimated_person_days": 30
+            },
+            {
+              "role": "GIS Analyst",
+              "position": "Lead Analyst",
+              "skills": "GIS data processing, geocoding, database preparation",
+              "estimated_person_days": 25
+            }
+          ]
+        },
+        {
+          "activity": "Data Validation and Classification",
+          "description": "Classification of beneficiaries by type and location and validation of spatial data.",
+          "estimated_duration_days": 25,
+          "team": [
+            {
+              "role": "Geospatial Planning Expert",
+              "position": "Expert",
+              "skills": "Spatial validation, GIS quality control",
+              "estimated_person_days": 15
+            },
+            {
+              "role": "Project Manager",
+              "position": "Team Leader",
+              "skills": "Quality assurance, stakeholder coordination",
+              "estimated_person_days": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "deliverable_order": 3,
+      "deliverable_name": "Baseline Energy Demand Assessment",
+      "description": "Baseline characterization of beneficiary populations and estimation of electricity consumption and demand growth profiles.",
+      "deadline_in_days": 120,
+      "deliverable_duration_days": 30,
+      "activities": [
+        {
+          "activity": "Demand Forecasting",
+          "description": "Estimation of residential, community and productive electricity demand and growth scenarios.",
+          "estimated_duration_days": 30,
+          "team": [
+            {
+              "role": "Rural Electrification Expert",
+              "position": "Expert",
+              "skills": "Load forecasting, rural electrification, energy demand analysis",
+              "estimated_person_days": 20
+            },
+            {
+              "role": "Energy Analyst",
+              "position": "Lead Specialist",
+              "skills": "Statistical analysis, forecasting, socioeconomic assessment",
+              "estimated_person_days": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "deliverable_order": 4,
+      "deliverable_name": "Preliminary Universal Access Plan",
+      "description": "Preliminary least-cost georeferenced electrification plan including CAPEX, OPEX and technical specifications for PV systems and mini-grids.",
+      "deadline_in_days": 210,
+      "deliverable_duration_days": 90,
+      "activities": [
+        {
+          "activity": "Optimization Model Development",
+          "description": "Development and execution of GIS-based electrification optimization model.",
+          "estimated_duration_days": 45,
+          "team": [
+            {
+              "role": "Geospatial Planning Expert",
+              "position": "Expert",
+              "skills": "GIS modeling, optimization, spatial planning",
+              "estimated_person_days": 35
+            },
+            {
+              "role": "Rural Electrification Expert",
+              "position": "Expert",
+              "skills": "PV systems, mini-grid design, techno-economic analysis",
+              "estimated_person_days": 30
+            }
+          ]
+        },
+        {
+          "activity": "CAPEX and OPEX Assessment",
+          "description": "Cost estimation for electrification alternatives and implementation planning.",
+          "estimated_duration_days": 25,
+          "team": [
+            {
+              "role": "Rural Electrification Expert",
+              "position": "Expert",
+              "skills": "Cost estimation, rural electrification economics",
+              "estimated_person_days": 18
+            },
+            {
+              "role": "Project Manager",
+              "position": "Team Leader",
+              "skills": "Economic evaluation, project oversight",
+              "estimated_person_days": 8
+            }
+          ]
+        },
+        {
+          "activity": "Environmental and Alternative Scenario Assessment",
+          "description": "Estimation of avoided diesel consumption, avoided deforestation and avoided greenhouse gas emissions.",
+          "estimated_duration_days": 20,
+          "team": [
+            {
+              "role": "Environmental Specialist",
+              "position": "Specialist",
+              "skills": "GHG accounting, environmental assessment, sustainability analysis",
+              "estimated_person_days": 15
+            },
+            {
+              "role": "Geospatial Planning Expert",
+              "position": "Expert",
+              "skills": "Spatial environmental analysis",
+              "estimated_person_days": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "deliverable_order": 5,
+      "deliverable_name": "Final Universal Access Plan",
+      "description": "Final electrification plan incorporating comments from IDB and MME, investment prospectus, implementation recommendations and final GIS datasets.",
+      "deadline_in_days": 270,
+      "deliverable_duration_days": 60,
+      "activities": [
+        {
+          "activity": "Stakeholder Workshops and Review",
+          "description": "Presentation of results, collection of feedback and refinement of outputs.",
+          "estimated_duration_days": 20,
+          "team": [
+            {
+              "role": "Project Manager",
+              "position": "Team Leader",
+              "skills": "Facilitation, stakeholder management, reporting",
+              "estimated_person_days": 12
+            },
+            {
+              "role": "Rural Electrification Expert",
+              "position": "Expert",
+              "skills": "Technical presentations, solution validation",
+              "estimated_person_days": 8
+            }
+          ]
+        },
+        {
+          "activity": "Final Report and Prospectus",
+          "description": "Preparation of final report, investment prospectus and delivery package.",
+          "estimated_duration_days": 40,
+          "team": [
+            {
+              "role": "Project Manager",
+              "position": "Team Leader",
+              "skills": "Technical writing, project integration",
+              "estimated_person_days": 15
+            },
+            {
+              "role": "Geospatial Planning Expert",
+              "position": "Expert",
+              "skills": "GIS deliverables, spatial documentation",
+              "estimated_person_days": 10
+            },
+            {
+              "role": "Rural Electrification Expert",
+              "position": "Expert",
+              "skills": "Electrification planning, implementation strategy",
+              "estimated_person_days": 10
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

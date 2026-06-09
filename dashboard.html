@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard de Otimização de Alocação — PSR</title>
+  <style>
+    /* ── Reset ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Tokens ── */
+    :root {
+      --navy:    #1a2b4a;
+      --navy2:   #243557;
+      --navy3:   #0f1e35;
+      --blue:    #2d5fa6;
+      --orange:  #e8641a;
+      --orange2: #f07d2f;
+      --bg:      #eef1f7;
+      --white:   #ffffff;
+      --border:  #d0d8ea;
+      --muted:   #6b7a99;
+      --green:   #1a8c3a;
+      --red:     #c0392b;
+      --green-bg:#d4edda;
+      --red-bg:  #f8d7da;
+      --blue-bg: #d0e4f7;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--navy);
+      min-height: 100vh;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    /* ── Header ── */
+    .hdr {
+      background: var(--navy3);
+      color: #fff;
+      height: 62px;
+      display: flex;
+      align-items: center;
+      padding: 0 36px;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      box-shadow: 0 3px 12px rgba(0,0,0,.35);
+    }
+    .hdr-left { display: flex; align-items: center; gap: 14px; }
+    .hdr-logo {
+      background: var(--orange);
+      color: #fff;
+      font-weight: 900;
+      font-size: 18px;
+      letter-spacing: 1px;
+      width: 46px; height: 46px;
+      border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .hdr-name  { font-size: 15px; font-weight: 700; }
+    .hdr-sub   { font-size: 11px; color: #8fa3c8; margin-top: 1px; }
+    .hdr-tag {
+      background: var(--orange); color: #fff;
+      font-size: 11px; font-weight: 700;
+      padding: 4px 12px; border-radius: 20px;
+    }
+
+    /* ── Layout ── */
+    .main { max-width: 1400px; margin: 0 auto; padding: 30px 24px 60px; }
+
+    /* ── Upload card ── */
+    .upload-card {
+      background: var(--white);
+      border-radius: 10px;
+      padding: 24px 28px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 10px rgba(26,43,74,.09);
+      border: 1px solid var(--border);
+    }
+    .upload-card h2 {
+      font-size: 14px; font-weight: 700;
+      color: var(--navy); margin-bottom: 18px;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .upload-card h2::before {
+      content: ''; display: inline-block;
+      width: 4px; height: 16px;
+      background: var(--orange); border-radius: 2px;
+    }
+    .upload-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 14px; margin-bottom: 18px;
+    }
+    .upload-field label {
+      display: block; font-size: 11px; font-weight: 700;
+      color: var(--muted); text-transform: uppercase;
+      letter-spacing: .5px; margin-bottom: 6px;
+    }
+    .upload-pick {
+      display: flex; align-items: center; gap: 8px;
+    }
+    .btn-pick {
+      background: var(--navy2); color: #fff;
+      border: none; padding: 9px 14px;
+      border-radius: 7px; font-size: 12px; font-weight: 700;
+      cursor: pointer; white-space: nowrap; flex-shrink: 0;
+      transition: background .2s;
+    }
+    .btn-pick:hover { background: var(--blue); }
+    .pick-name {
+      font-size: 12px; color: var(--muted);
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+      flex: 1; min-width: 0;
+    }
+    .pick-name.ok { color: var(--green); font-weight: 600; }
+    .upload-actions { display: flex; gap: 10px; }
+    .btn-load {
+      background: var(--orange); color: #fff;
+      border: none; padding: 11px 28px;
+      border-radius: 8px; font-size: 13px; font-weight: 700;
+      cursor: pointer; white-space: nowrap;
+      transition: background .2s;
+    }
+    .btn-load:hover { background: var(--orange2); }
+    .btn-reload {
+      background: var(--navy2); color: #fff;
+      border: none; padding: 11px 20px;
+      border-radius: 8px; font-size: 13px; font-weight: 700;
+      cursor: pointer; white-space: nowrap;
+      transition: background .2s;
+    }
+    .btn-reload:hover:not(:disabled) { background: var(--blue); }
+    .btn-reload:disabled { opacity: .38; cursor: default; }
+
+    /* ── Section heading ── */
+    .sec-head {
+      display: flex; align-items: center; gap: 12px;
+      margin: 8px 0 22px;
+    }
+    .sec-num {
+      background: var(--orange); color: #fff;
+      font-size: 13px; font-weight: 800;
+      width: 30px; height: 30px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .sec-title { font-size: 19px; font-weight: 800; color: var(--navy); }
+
+    /* ── Card ── */
+    .card {
+      background: var(--white);
+      border-radius: 10px;
+      padding: 22px 24px;
+      box-shadow: 0 2px 10px rgba(26,43,74,.09);
+      border: 1px solid var(--border);
+      margin-bottom: 20px;
+    }
+    .card-title {
+      font-size: 13px; font-weight: 800;
+      color: var(--navy);
+      border-bottom: 2px solid var(--orange);
+      padding-bottom: 10px; margin-bottom: 16px;
+    }
+
+    /* ── Info grid ── */
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 16px;
+    }
+    .info-lbl {
+      font-size: 10px; font-weight: 700;
+      color: var(--muted); text-transform: uppercase;
+      letter-spacing: .5px; margin-bottom: 3px;
+    }
+    .info-val {
+      font-size: 15px; font-weight: 700; color: var(--navy);
+    }
+    .info-val.lg { font-size: 13px; }
+
+    /* ── Deliverable block ── */
+    .dlv {
+      background: var(--white);
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(26,43,74,.09);
+      border: 1px solid var(--border);
+      margin-bottom: 18px; overflow: hidden;
+    }
+    .dlv-hdr {
+      background: var(--navy2); color: #fff;
+      padding: 13px 20px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .dlv-hdr h3 { font-size: 13px; font-weight: 700; }
+    .dlv-badge {
+      background: var(--orange); color: #fff;
+      font-size: 11px; font-weight: 700;
+      padding: 3px 12px; border-radius: 12px;
+      white-space: nowrap; margin-left: 12px;
+    }
+    .dlv-body { padding: 18px 20px; }
+
+    /* ── Activity block ── */
+    .act {
+      border: 1px solid var(--border);
+      border-radius: 8px; margin-bottom: 14px; overflow: hidden;
+    }
+    .act-hdr {
+      background: #eef1f7;
+      padding: 10px 16px;
+      display: flex; align-items: center; justify-content: space-between;
+      font-weight: 700; font-size: 13px; color: var(--navy);
+    }
+    .act-body { padding: 14px 16px; }
+    .act-meta { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
+    .pill {
+      background: #e4eaf6;
+      border-radius: 6px; padding: 4px 12px;
+      font-size: 12px; color: var(--navy);
+    }
+    .pill b { font-weight: 700; }
+
+    /* ── Sub-table title ── */
+    .stl {
+      font-size: 11px; font-weight: 700;
+      color: var(--muted); text-transform: uppercase;
+      letter-spacing: .5px; margin: 14px 0 7px;
+    }
+
+    /* ── Tables ── */
+    .tw { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 12px; }
+    thead th {
+      background: var(--navy); color: #fff;
+      padding: 9px 13px; text-align: left;
+      font-weight: 700; font-size: 11px;
+      text-transform: uppercase; letter-spacing: .4px;
+      white-space: nowrap;
+    }
+    tbody tr:nth-child(even) { background: #f6f8fd; }
+    tbody tr:hover { background: #e8edf9; }
+    tbody td { padding: 8px 13px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+
+    /* ── KPI grid ── */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(155px,1fr));
+      gap: 14px; margin-bottom: 22px;
+    }
+    .kpi {
+      background: var(--white);
+      border-radius: 10px; padding: 18px 14px; text-align: center;
+      box-shadow: 0 2px 10px rgba(26,43,74,.09);
+      border: 1px solid var(--border);
+      border-top: 4px solid var(--orange);
+    }
+    .kpi.g  { border-top-color: var(--green); }
+    .kpi.b  { border-top-color: var(--blue);  }
+    .kpi.nv { border-top-color: var(--navy2); }
+    .kpi-v  { font-size: 26px; font-weight: 900; color: var(--navy); line-height: 1; }
+    .kpi-l  { font-size: 10px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; margin-top: 5px; }
+
+    /* ── Params grid ── */
+    .params-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(210px,1fr));
+      gap: 10px;
+    }
+    .param-item {
+      background: #f6f8fd; border: 1px solid var(--border);
+      border-radius: 7px; padding: 10px 14px;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .param-name { font-size: 12px; font-weight: 600; color: var(--muted); }
+    .param-val  { font-size: 14px; font-weight: 800; color: var(--navy); }
+
+    /* ── Gantt ── */
+    .gantt { min-width: 600px; }
+    .gt-hdr { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+    .gt-lbl  { width: 260px; flex-shrink: 0; }
+    .gt-ticks { flex: 1; display: flex; justify-content: space-between; font-size: 10px; color: var(--muted); }
+    .gt-row  { display: flex; align-items: center; gap: 10px; margin-bottom: 7px; }
+    .gt-name {
+      width: 260px; flex-shrink: 0; font-size: 11px; color: var(--navy);
+      text-align: right; line-height: 1.3; word-break: break-word;
+    }
+    .gt-track-wrap { flex: 1; display: flex; align-items: center; gap: 8px; }
+    .gt-track { flex: 1; height: 22px; background: #e4eaf6; border-radius: 5px; position: relative; }
+    .gt-bar {
+      position: absolute; top: 0; height: 100%; background: var(--blue);
+      border-radius: 5px; cursor: default;
+    }
+    .gt-days {
+      font-size: 10px; font-weight: 700; color: var(--navy);
+      white-space: nowrap; flex-shrink: 0; min-width: 80px;
+    }
+
+    /* ── Solution rank panels ── */
+    .sol-panel { border: 1px solid var(--border); border-radius: 8px; margin-bottom: 10px; overflow: hidden; }
+    .sol-hdr {
+      display: flex; align-items: center; gap: 10px;
+      padding: 9px 14px; cursor: pointer; user-select: none;
+      background: #f6f8fd;
+      transition: background .15s;
+    }
+    .sol-hdr:hover { background: #e8edf9; }
+    .sol-rank {
+      font-size: 11px; font-weight: 800; color: #fff;
+      background: var(--navy2); border-radius: 4px;
+      padding: 2px 8px; white-space: nowrap; flex-shrink: 0;
+    }
+    .sol-rank.r1 { background: var(--orange); }
+    .sol-costs { display: flex; gap: 8px; flex: 1; flex-wrap: wrap; }
+    .sol-cost-item { font-size: 11px; color: var(--muted); }
+    .sol-cost-item b { color: var(--navy); }
+    .sol-body { padding: 14px 16px; }
+
+    /* ── Badge ── */
+    .bdg { display: inline-block; padding: 2px 9px; border-radius: 12px; font-size: 11px; font-weight: 700; }
+    .bdg-g { background: var(--green-bg); color: #145a1e; }
+    .bdg-r { background: var(--red-bg);   color: #7b1c1c; }
+    .bdg-b { background: var(--blue-bg);  color: #1a3f7a; }
+    .bdg-o { background: #fde8d3;         color: #7a3200; }
+
+    /* ── Skill bar ── */
+    .sk-wrap { display: inline-flex; align-items: center; gap: 6px; }
+    .sk-bg   { width: 56px; height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; }
+    .sk-fill { height: 100%; border-radius: 3px; }
+
+    /* ── Skill tags ── */
+    .skill-toggle {
+      display: inline-flex; align-items: center; gap: 4px;
+      cursor: pointer; font-size: 11px; font-weight: 700;
+      color: var(--muted); user-select: none;
+      white-space: nowrap;
+    }
+    .skill-toggle:hover { color: var(--orange); }
+    .skill-tag {
+      display: inline-block; border-radius: 4px;
+      padding: 2px 7px; font-size: 11px; font-weight: 600;
+      margin: 2px 3px 2px 0; white-space: nowrap;
+    }
+    .skill-match { background: var(--green-bg); color: #145a1e; }
+    .skill-miss  { background: var(--red-bg);   color: #7b1c1c; }
+
+    /* ── Date chip ── */
+    .dc {
+      display: inline-block; background: #e4eaf6;
+      border-radius: 4px; padding: 1px 5px;
+      font-size: 10px; color: var(--navy); margin: 1px;
+    }
+
+    /* ── Collapsible section ── */
+    .stl-toggle {
+      display: flex; align-items: center; justify-content: space-between;
+      cursor: pointer; user-select: none;
+      margin: 14px 0 7px;
+    }
+    .stl-toggle:hover .stl-arrow { color: var(--orange); }
+    .stl-arrow {
+      font-size: 11px; color: var(--muted);
+      transition: transform .2s;
+      display: inline-block;
+    }
+    .stl-arrow.open { transform: rotate(90deg); }
+    .collapsible { overflow: hidden; transition: max-height .25s ease, opacity .2s ease; }
+    .collapsible.collapsed { max-height: 0 !important; opacity: 0; }
+
+    /* ── Divider ── */
+    .divider { border: none; border-top: 2px solid var(--border); margin: 34px 0; }
+
+    /* ── Placeholder ── */
+    .placeholder {
+      text-align: center; padding: 70px 20px; color: var(--muted);
+    }
+    .placeholder-icon { font-size: 52px; margin-bottom: 14px; }
+    .placeholder p { font-size: 14px; }
+
+    .hidden { display: none !important; }
+
+    @media (max-width: 860px) {
+      .upload-row { grid-template-columns: 1fr; }
+      .kpi-grid   { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ HEADER ══ -->
+<header class="hdr">
+  <div class="hdr-left">
+    <div class="hdr-logo">PSR</div>
+    <div>
+      <div class="hdr-name">Dashboard de Otimização de Alocação</div>
+      <div class="hdr-sub">Algoritmo Genético · Alocação de Colaboradores em Projetos</div>
+    </div>
+  </div>
+  <div class="hdr-tag">TCC</div>
+</header>
+
+<!-- ══ MAIN ══ -->
+<main class="main">
+
+  <!-- ── Seletor de diretório ── -->
+  <div id="pickCard" class="upload-card" style="display:flex;align-items:center;gap:16px">
+    <button class="btn-load" onclick="pickDir()">📁 Selecionar Diretório</button>
+    <span style="font-size:13px;color:var(--muted)">Selecione o diretório que contém os arquivos <code>InputData.json</code> , <code>OutputData.json</code> e <code>program.py</code>.</span>
+  </div>
+
+  <!-- ── Dashboard content ── -->
+  <div id="content" class="hidden">
+
+    <!-- ════ SEÇÃO 1 ════ -->
+    <div class="sec-head">
+      <div class="sec-num">1</div>
+      <div class="sec-title">Dados de Entrada para a Otimização</div>
+    </div>
+
+    <!-- 1a · Resumo do projeto -->
+    <div class="card">
+      <div class="card-title">📋 Resumo do Projeto</div>
+      <div class="info-grid" id="projectSummary"></div>
+    </div>
+
+    <!-- 1a · Entregáveis e atividades -->
+    <div id="inputDeliverables"></div>
+
+    <!-- 1b · Hierarquia de posições -->
+    <div class="card">
+      <div class="card-title">🏷️ Hierarquia de Posições</div>
+      <div class="tw">
+        <table id="posTable">
+          <thead>
+            <tr>
+              <th>Ordem</th>
+              <th>Posição</th>
+              <th>Custo / Hora (USD)</th>
+              <th>Custo / Dia (USD)</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 1c · Parâmetros de otimização -->
+    <div class="card">
+      <div class="card-title">⚙️ Parâmetros do Algoritmo Genético</div>
+      <div id="optParams"></div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- ════ SEÇÃO 2 ════ -->
+    <div class="sec-head">
+      <div class="sec-num">2</div>
+      <div class="sec-title">Resultado da Otimização</div>
+    </div>
+
+    <!-- 2 · KPIs -->
+    <div class="kpi-grid" id="kpiGrid"></div>
+
+    <!-- 2 · Gantt -->
+    <div class="card">
+      <div class="card-title">📅 Cronograma de Atividades</div>
+      <div style="overflow-x:auto">
+        <div class="gantt" id="gantt"></div>
+      </div>
+    </div>
+
+    <!-- 2 · Resultado por entregável -->
+    <div id="outputDeliverables"></div>
+
+  </div><!-- #content -->
+
+</main>
+
+<script>
+  var inputData  = null;
+  var outputData = null;
+  var pyParams   = null;
+  var dirHandle  = null;
+
+  async function pickDir() {
+    if (!window.showDirectoryPicker) {
+      alert('Seu browser não suporta File System Access API.\nUse Chrome ou Edge.');
+      return;
+    }
+    try {
+      dirHandle = await window.showDirectoryPicker({ mode: 'read' });
+      await loadData();
+    } catch(e) { /* user cancelled */ }
+  }
+
+  async function readFromDir(filename) {
+    var fh   = await dirHandle.getFileHandle(filename);
+    var file = await fh.getFile();
+    return file.text();
+  }
+
+  /* Extract   PARAM_NAME = value   lines from Python source */
+  function parsePyParams(src) {
+    var keys = [
+      'POPULATION_SIZE', 'MAX_GENERATIONS', 'CROSSOVER_PROB',
+      'MUTATION_PROB', 'MUTATION_GENE_PROB', 'TOURNAMENT_SIZE',
+      'HALL_OF_FAME_SIZE', 'OUTSOURCE_MULTIPLIER', 'POSITION_PENALTY_STEP'
+    ];
+    var result = {};
+    keys.forEach(function(k) {
+      var m = src.match(new RegExp('^' + k + '\\s*=\\s*([^#\\n]+)', 'm'));
+      if (m) {
+        var raw = m[1].trim();
+        var n   = parseFloat(raw);
+        result[k] = isNaN(n) ? raw : n;
+      }
+    });
+    return Object.keys(result).length ? result : null;
+  }
+
+  function esc(s) {
+    return String(s == null ? '—' : s)
+      .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+  function usd(n) { return '$ ' + Number(n).toLocaleString('pt-BR', {minimumFractionDigits:2, maximumFractionDigits:2}); }
+  function num(n) { return Number(n).toLocaleString('pt-BR'); }
+
+  async function loadData() {
+    try {
+      inputData  = JSON.parse(await readFromDir('InputData.json'));
+      outputData = JSON.parse(await readFromDir('OutputData.json'));
+      pyParams   = null;
+      try { pyParams = parsePyParams(await readFromDir('program.py')); } catch(e) { /* optional */ }
+      document.getElementById('pickCard').classList.add('hidden');
+      document.getElementById('content').classList.remove('hidden');
+      renderAll();
+    } catch(e) { alert('Erro ao carregar arquivos: ' + e.message); }
+  }
+
+  function toggleSection(id, btn) {
+    var el    = document.getElementById(id);
+    var arrow = btn.querySelector('.stl-arrow');
+    var isOpen = !el.classList.contains('collapsed');
+    if (isOpen) {
+      el.style.maxHeight = '0';
+      el.classList.add('collapsed');
+      arrow.classList.remove('open');
+    } else {
+      el.classList.remove('collapsed');
+      el.style.maxHeight = el.scrollHeight + 'px';
+      arrow.classList.add('open');
+    }
+  }
+
+  function renderAll() {
+    render1a_Summary();
+    render1a_Deliverables();
+    render1b_Positions();
+    render1c_Params();
+    render2_KPIs();
+    render2_Gantt();
+    render2_Deliverables();
+  }
+
+  /* ════ SECTION 1 ════ */
+
+  /* 1a — Project summary */
+  function render1a_Summary() {
+    var p = inputData.proposal;
+    var totalActs = p.deliverables.reduce(function(a,d){ return a + d.activities.length; }, 0);
+    document.getElementById('projectSummary').innerHTML =
+      item('Título',                '<span class="info-val lg">' + esc(p.title) + '</span>', true) +
+      item('Data de Início',        p.project_start_date) +
+      item('Prazo do Projeto',      p.deadline_in_days + ' dias') +
+      item('Total de Entregáveis',  p.deliverables.length) +
+      item('Total de Atividades',   totalActs);
+
+    function item(lbl, val, raw) {
+      return '<div class="info-item"><div class="info-lbl">' + lbl + '</div>' +
+             (raw ? val : '<div class="info-val">' + esc(val) + '</div>') + '</div>';
+    }
+  }
+
+  /* 1a — Deliverables + activities */
+  function render1a_Deliverables() {
+    var html = '';
+    var prevDeadline = 0;
+    inputData.proposal.deliverables.forEach(function(d) {
+      var duration = d.deadline_in_days - prevDeadline;
+      prevDeadline = d.deadline_in_days;
+      html += '<div class="dlv">' +
+        '<div class="dlv-hdr"><h3>Entregável ' + d.deliverable_order + ' — ' + esc(d.deliverable_name) + '</h3>' +
+        '<span class="dlv-badge">Prazo: ' + duration + ' dias</span></div>' +
+        '<div class="dlv-body">';
+
+      d.activities.forEach(function(a) {
+        html += '<div class="act">' +
+          '<div class="act-hdr"><span>📌 ' + esc(a.name) + '</span>' +
+          '<span class="bdg bdg-b">' + a.estimated_duration_days + ' dias</span></div>' +
+          '<div class="act-body">';
+
+        /* expected_team table */
+        html += '<div class="stl">Equipe Esperada</div><div class="tw"><table>' +
+          '<thead><tr><th>Papel</th><th>Posição</th><th>Macro Skills</th><th>Pessoa-Dias</th></tr></thead><tbody>';
+        a.expected_team.forEach(function(t) {
+          html += '<tr><td>' + esc(t.role) + '</td><td>' + esc(t.position) + '</td>' +
+                  '<td>' + esc((t.macro_skills||[]).join(', ')) + '</td><td>' + esc(t.estimated_person_days) + '</td></tr>';
+        });
+        html += '</tbody></table></div>';
+
+        /* candidate_employees table — collapsible */
+        var colId = 'cand-' + Math.random().toString(36).slice(2);
+        html += '<div class="stl-toggle" onclick="toggleSection(\'' + colId + '\', this)">' +
+                  '<span class="stl" style="margin:0">Candidatos (' + a.candidate_employees.length + ')</span>' +
+                  '<span class="stl-arrow">▶</span>' +
+                '</div>' +
+                '<div class="collapsible collapsed" id="' + colId + '" style="max-height:0">' +
+                  '<div class="tw"><table>' +
+                  '<thead><tr><th>ID</th><th>Nome</th><th>Posição</th><th>Macro Skills</th><th>Dias Disponíveis</th></tr></thead><tbody>';
+        a.candidate_employees.forEach(function(e) {
+          var dates = (e.free_days_date_format||e.free_days||[]).map(function(d){ return '<span class="dc">'+esc(d)+'</span>'; }).join('');
+          html += '<tr><td><code>' + esc(e.id) + '</code></td><td><b>' + esc(e.name) + '</b></td>' +
+                  '<td>' + esc(e.position) + '</td>' +
+                  '<td>' + esc((e.macro_skills||[]).join(', ')) + '</td>' +
+                  '<td>' + dates + '</td></tr>';
+        });
+        html += '</tbody></table></div></div>';
+
+        html += '</div></div>'; /* act-body, act */
+      });
+
+      html += '</div></div>'; /* dlv-body, dlv */
+    });
+    document.getElementById('inputDeliverables').innerHTML = html;
+  }
+
+  /* 1b — Position hierarchy */
+  function render1b_Positions() {
+    var tbody = document.querySelector('#posTable tbody');
+    var rows  = '';
+    var sorted = (inputData.position_order || []).slice().sort(function(a,b){ return a.order - b.order; });
+    sorted.forEach(function(p) {
+      rows += '<tr><td>' + p.order + '</td><td>' + esc(p.name) + '</td><td>' + usd(p.hourly_cost) + '</td><td>' + usd(p.hourly_cost * 8) + '</td></tr>';
+    });
+    tbody.innerHTML = rows;
+  }
+
+  /* 1c — Optimization parameters */
+  function render1c_Params() {
+    var op = pyParams;
+    var el = document.getElementById('optParams');
+
+    if (!op) {
+      el.innerHTML =
+        '<p style="color:var(--muted);font-size:13px">ℹ️ Carregue o arquivo <code>program.py</code> para visualizar os parâmetros do algoritmo genético.</p>';
+      return;
+    }
+
+    var defs = [
+      { k:'POPULATION_SIZE',      l:'Population Size'         },
+      { k:'MAX_GENERATIONS',      l:'Max Generations'         },
+      { k:'CROSSOVER_PROB',       l:'Crossover Probability'   },
+      { k:'MUTATION_PROB',        l:'Mutation Probability'    },
+      { k:'MUTATION_GENE_PROB',   l:'Mutation Gene Prob.'     },
+      { k:'TOURNAMENT_SIZE',      l:'Tournament Size'         },
+      { k:'HALL_OF_FAME_SIZE',    l:'Hall of Fame Size'       },
+      { k:'OUTSOURCE_MULTIPLIER', l:'Outsource Multiplier'    },
+      { k:'POSITION_PENALTY_STEP',l:'Position Penalty Step'   },
+    ];
+
+    var html = '<div class="params-grid">';
+    defs.forEach(function(d) {
+      var v = op[d.k];
+      html += '<div class="param-item">' +
+              '<span class="param-name">' + esc(d.l) + '</span>' +
+              '<span class="param-val">'  + (v !== undefined ? esc(v) : '—') + '</span>' +
+              '</div>';
+    });
+    html += '</div>';
+    el.innerHTML = html;
+  }
+
+  /* ════ SECTION 2 ════ */
+
+  /* 2 — KPIs */
+  function render2_KPIs() {
+    var o = outputData, s = o.summary;
+    var ok  = s.within_deadline;
+    var kpis = [
+      { l:'Status',              v: o.viable ? '✓ Viável' : '✗ Inviável',            c: o.viable   ? 'g' : '' },
+      { l:'Fitness Score',       v: (o.fitness_score * 100).toFixed(1) + '%',         c: 'b' },
+      { l:'Gerações Executadas', v: num(o.generations_run),                            c: 'nv' },
+      { l:'Custo Total',         v: usd(s.total_cost_usd),                             c: '' },
+      { l:'Papéis Alocados',     v: s.roles_staffed,                                   c: 'g' },
+      { l:'Terceirizações',      v: s.roles_outsourced,                                c: s.roles_outsourced > 0 ? '' : 'g' },
+      { l:'Duração do Projeto',  v: s.project_duration_days + ' dias',                 c: ok ? 'g' : '' },
+      { l:'Prazo',               v: ok ? '✓ No prazo' : '✗ Fora do prazo',            c: ok ? 'g' : '' },
+    ];
+    document.getElementById('kpiGrid').innerHTML = kpis.map(function(k) {
+      return '<div class="kpi ' + k.c + '"><div class="kpi-v">' + esc(k.v) +
+             '</div><div class="kpi-l">' + esc(k.l) + '</div></div>';
+    }).join('');
+  }
+
+  /* 2 — Gantt */
+  function render2_Gantt() {
+    var total = outputData.max_end_day || outputData.deadline_days || 1;
+    var tickStep = Math.max(1, Math.floor(total / 8));
+    var ticks = [];
+    for (var t = 0; t <= total; t += tickStep) ticks.push(t);
+    if (ticks[ticks.length-1] !== total) ticks.push(total);
+
+    var html =
+      '<div class="gt-hdr"><div class="gt-lbl"></div><div class="gt-ticks">' +
+      ticks.map(function(t){ return '<span>Dia ' + t + '</span>'; }).join('') +
+      '</div></div>';
+
+    outputData.deliverables.forEach(function(d) {
+      html += '<div class="gt-row"><div class="gt-name" style="font-weight:800;color:var(--orange)">' + esc(d.name) + '</div>' +
+              '<div class="gt-track-wrap"><div class="gt-track"></div><div class="gt-days"></div></div></div>';
+      d.activities.forEach(function(a) {
+        var left  = ((a.start_day - 1) / total * 100).toFixed(2) + '%';
+        var width = Math.max(((a.end_day - a.start_day + 1) / total * 100), 0.5).toFixed(2) + '%';
+        html += '<div class="gt-row">' +
+                '<div class="gt-name">' + esc(a.name) + '</div>' +
+                '<div class="gt-track-wrap">' +
+                  '<div class="gt-track">' +
+                    '<div class="gt-bar" style="left:' + left + ';width:' + width + '" title="' + esc(a.name) + ' (Dia ' + a.start_day + ' → Dia ' + a.end_day + ')"></div>' +
+                  '</div>' +
+                  '<div class="gt-days">D' + a.start_day + ' → D' + a.end_day + '</div>' +
+                '</div>' +
+                '</div>';
+      });
+    });
+
+    document.getElementById('gantt').innerHTML = html;
+  }
+
+  /* 2 — Render one solution panel (shared by all ranks) */
+  function renderSolutionPanel(sol) {
+    var html = '';
+
+    /* assignments table */
+    if (sol.assignments && sol.assignments.length) {
+      html += '<div class="stl">Alocações</div><div class="tw"><table>' +
+        '<thead><tr><th>Papel</th><th>Posição Requerida</th><th>Posição do Colaborador</th><th>Colaborador</th><th>ID</th>' +
+        '<th>Skill Match</th><th>Datas Alocadas</th><th></th></tr></thead><tbody>';
+      sol.assignments.forEach(function(asgn) {
+        var pct   = (asgn.skill_match_score * 100).toFixed(0);
+        var color = asgn.skill_match_score >= 1.0 ? 'var(--green)' :
+                    asgn.skill_match_score >= 0.7 ? 'var(--orange)' : 'var(--red)';
+        var dates = (asgn.allocated_dates||[]).map(function(d){ return '<span class="dc">'+esc(d)+'</span>'; }).join('');
+
+        /* employee position badge — same colour as required when equal, orange when different */
+        var empPos      = asgn.employee_position || asgn.position;
+        var posMatch    = empPos === asgn.position;
+        var empPosBadge = '<span class="bdg ' + (posMatch ? 'bdg-b' : 'bdg-o') + '">' + esc(empPos) + '</span>';
+
+        /* skills collapsible */
+        var skillsHtml = '';
+        if (asgn.required_macro_skills && asgn.matched_macro_skills) {
+          var skId    = 'sk-' + Math.random().toString(36).slice(2);
+          var matched = asgn.matched_macro_skills.map(function(s){ return s.toLowerCase(); });
+          var skillTags = asgn.required_macro_skills.map(function(s) {
+            var isMatch = matched.indexOf(s.toLowerCase()) !== -1;
+            return '<span class="skill-tag ' + (isMatch ? 'skill-match' : 'skill-miss') + '">' +
+                   (isMatch ? '✓ ' : '✗ ') + esc(s) + '</span>';
+          }).join('');
+          skillsHtml =
+            '<div class="skill-toggle" onclick="toggleSection(\'' + skId + '\', this)" title="Ver macro skills">' +
+              '<span class="stl-arrow" style="font-size:10px">▶</span> Skills' +
+            '</div>' +
+            '<div class="collapsible collapsed" id="' + skId + '" style="max-height:0">' +
+              '<div style="padding:8px 0 2px">' + skillTags + '</div>' +
+            '</div>';
+        }
+
+        html += '<tr>' +
+          '<td>' + esc(asgn.role) + '</td>' +
+          '<td><span class="bdg bdg-b">' + esc(asgn.position) + '</span></td>' +
+          '<td>' + empPosBadge + '</td>' +
+          '<td><b>' + esc(asgn.employee_name) + '</b></td>' +
+          '<td><code>' + esc(asgn.employee_id) + '</code></td>' +
+          '<td><div class="sk-wrap"><div class="sk-bg"><div class="sk-fill" style="width:'+pct+'%;background:'+color+'"></div></div>' +
+              '<span style="font-size:11px;font-weight:700;color:'+color+'">' + pct + '%</span></div></td>' +
+          '<td>' + dates + '</td>' +
+          '<td style="min-width:90px">' + skillsHtml + '</td>' +
+          '</tr>';
+      });
+      html += '</tbody></table></div>';
+    }
+
+    /* gaps table */
+    if (sol.gaps && sol.gaps.length) {
+      html += '<div class="stl" style="color:var(--red)">Posições não preenchidas</div>' +
+        '<div class="tw"><table><thead><tr><th>Papel</th><th>Posição Requerida</th><th>Skills Requeridas</th></tr></thead><tbody>';
+      sol.gaps.forEach(function(g) {
+        var skills = (g.required_macro_skills || []).map(function(s) {
+          return '<span class="skill-tag skill-miss">' + esc(s) + '</span>';
+        }).join('');
+        html += '<tr>' +
+          '<td>' + esc(g.role || g) + '</td>' +
+          '<td><span class="bdg bdg-o">' + esc(g.required_position || '—') + '</span></td>' +
+          '<td>' + (skills || '—') + '</td>' +
+          '</tr>';
+      });
+      html += '</tbody></table></div>';
+    }
+
+    return html;
+  }
+
+  /* 2 — Deliverables result */
+  function render2_Deliverables() {
+    var html = '';
+    var prevDeadline = 0;
+    outputData.deliverables.forEach(function(d) {
+      var duration = d.deadline_in_days - prevDeadline;
+      prevDeadline = d.deadline_in_days;
+      html += '<div class="dlv">' +
+        '<div class="dlv-hdr"><h3>Entregável ' + d.order + ' — ' + esc(d.name) + '</h3>' +
+        '<span class="dlv-badge">' + usd(d.total_cost_usd) + ' · Prazo: ' + duration + ' dias</span></div>' +
+        '<div class="dlv-body">';
+
+      d.activities.forEach(function(a) {
+        var ok       = a.status && a.status.indexOf('✓') !== -1;
+        var solutions = a.solutions || [];
+        var best     = solutions[0];
+
+        html += '<div class="act">' +
+          '<div class="act-hdr"><span>📌 ' + esc(a.name) + '</span>' +
+          '<span class="bdg ' + (ok ? 'bdg-g' : 'bdg-r') + '">' + esc(a.status) + '</span></div>' +
+          '<div class="act-body">';
+
+        /* meta pills — based on best solution */
+        html += '<div class="act-meta">' +
+          '<div class="pill">Início: <b>Dia ' + a.start_day + '</b></div>' +
+          '<div class="pill">Fim: <b>Dia ' + a.end_day + '</b></div>' +
+          '<div class="pill">Duração: <b>' + (a.end_day - a.start_day) + ' dias</b></div>';
+        if (best && best.gaps && best.gaps.length > 0)
+          html += '<div class="pill" style="color:var(--red)">Posições não preenchidas: <b>' + best.gaps.length + '</b></div>';
+        html += '</div>';
+
+        /* one collapsible panel per solution, ordered by rank */
+        solutions.forEach(function(sol) {
+          var isFirst = sol.rank === 1;
+          var panelId = 'sol-' + Math.random().toString(36).slice(2);
+          var rankCls = isFirst ? 'r1' : '';
+
+          html +=
+            '<div class="sol-panel">' +
+              '<div class="sol-hdr" onclick="toggleSection(\'' + panelId + '\', this)">' +
+                '<span class="sol-rank ' + rankCls + '">Solução ' + sol.rank + '</span>' +
+                '<div class="sol-costs">' +
+                  '<span class="sol-cost-item">Custo Penalizado: <b>' + usd(sol.cost) + '</b></span>' +
+                  '<span class="sol-cost-item">Custo Real: <b>' + usd(sol.real_cost) + '</b></span>' +
+                '</div>' +
+                '<span class="stl-arrow">▶</span>' +
+              '</div>' +
+              '<div class="collapsible collapsed" id="' + panelId + '" style="max-height:0">' +
+                '<div class="sol-body">' + renderSolutionPanel(sol) + '</div>' +
+              '</div>' +
+            '</div>';
+        });
+
+        html += '</div></div>'; /* act-body, act */
+      });
+
+      html += '</div></div>'; /* dlv-body, dlv */
+    });
+    document.getElementById('outputDeliverables').innerHTML = html;
+  }
+</script>
+</body>
+</html>

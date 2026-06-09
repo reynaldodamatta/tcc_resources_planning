@@ -1,0 +1,364 @@
+﻿{
+  "doc_name": "PR_CIER_19-PORTAL_Términos_de_Referencia_VF.pdf",
+  "title": "Proyecto Portal Mercado de Energía – Proyecto CIER 19",
+  "objectives": "General objective: Expand knowledge and availability of information on Latin American energy markets through a web portal that enables tracking of market status, evolution and key parameters, increasing the visibility of electricity markets in Latin America and serving as a practical tool for stakeholders interested in relevant data, market designs, and key institutions per country. Specific objectives: (1) Study energy market models in South America, Central America, Iberian MIBEL, PJM-USA, NORDPOOL, Australia, UK, and Germany; (2) Determine fixed and variable information for each market; (3) Propose a framework for value-added information analysis; (4) Present a scheme to display information and implement it on the CIER website, with a conclusions and recommendations document; (5) Propose mechanisms for portal administration and updating.",
+  "deadline_in_days": 120,
+  "feasibility_assessment": {
+    "assessment": "Challenging but feasible with an adequately sized and experienced team",
+    "rationale": "The 4-month (approx. 120-day) timeline is tight given the breadth of scope: researching 15+ international energy market models across 17 LAC countries and 6 international reference markets, designing and building a multilingual (ES/EN/PT) web portal with dynamic and static content, user access control (LDAP), social media integration (LinkedIn, Facebook), RSS, data export to Excel, and mobile responsiveness. Feasibility depends critically on: (a) CIER delivering the market information inventory on time at project start, (b) GT O&AM representatives being promptly available for iterative validation of market parameters, and (c) the 6-member team executing research and development workstreams with minimal rework between deliverables. The post-launch accompaniment period (2 months) defined in the original terms of reference is excluded from this timeline as it extends beyond the contractual 120-day boundary."
+  },
+  "budget": "Not specified in the document. The contract value is to be proposed by the consultant as a global fixed price in USD, with no price adjustment clauses. International travel (economy class airfare) is reimbursable by CIER upon invoice presentation. Per diem rates (accommodation, meals, ground transport, taxes) follow the CIER in-force project table. A 10% retention guarantee is withheld from each payment installment and released upon final report approval by CIER (within 3 weeks of definitive version receipt). Payment schedule: 20% advance (1 week after contract signing), 20% after 1st partial report acceptance, 20% after 2nd partial report acceptance, 40% after final report approval.",
+  "deliverables": [
+    {
+      "deliverable_order": 1,
+      "deliverable_name": "Kickoff & Requirements Document (DR)",
+      "description": "Project initiation with CIER and GT O&AM; elaboration of the requirements document (DR) covering methodology, functional and non-functional system requirements, site structure with hierarchies and relationships, information management processes required by energy markets and applicable regulations, and a detailed iterative work plan with milestones and payment triggers. Triggers the 20% advance payment.",
+      "deadline_in_days": 15,
+      "deliverable_duration_days": 15,
+      "activities": [
+        {
+          "activity": "Project kickoff and stakeholder alignment",
+          "description": "Initial meeting with CIER and GT O&AM to align scope, confirm information inventory handover schedule, agree on technical standards (security baseline, graphic interface standards, architecture guide), and define communication protocols.",
+          "estimated_duration_days": 3,
+          "team": [
+            {
+              "role": "Project Manager",
+              "position": "Team Leader",
+              "skills": "Project management, stakeholder coordination, contract management",
+              "estimated_person_days": 3
+            },
+            {
+              "role": "Senior Energy Market Analyst",
+              "position": "Expert",
+              "skills": "Energy market knowledge, stakeholder communication",
+              "estimated_person_days": 1
+            },
+            {
+              "role": "Lead Software Architect / Full-Stack Developer",
+              "position": "Lead Specialist",
+              "skills": "Technical standards review, architecture guide assessment",
+              "estimated_person_days": 1
+            }
+          ]
+        },
+        {
+          "activity": "Requirements elicitation and DR elaboration",
+          "description": "Identify, define and document all functional and non-functional requirements of the portal system; define site section structure, hierarchies and relationships; characterize information management processes required by energy markets and applicable regulations.",
+          "estimated_duration_days": 8,
+          "team": [
+            {
+              "role": "Business Analyst / Documentation & QA Specialist",
+              "position": "Specialist",
+              "skills": "Business analysis, systems architecture, web portal requirements, technical writing",
+              "estimated_person_days": 8
+            },
+            {
+              "role": "Lead Software Architect / Full-Stack Developer",
+              "position": "Lead Specialist",
+              "skills": "Technical requirements, non-functional requirements, integration constraints",
+              "estimated_person_days": 4
+            },
+            {
+              "role": "UX/UI Designer & Frontend Developer",
+              "position": "Lead Analyst",
+              "skills": "UI/UX requirements, interface standards",
+              "estimated_person_days": 2
+            }
+          ]
+        },
+        {
+          "activity": "Detailed work plan with iterations/modules",
+          "description": "Elaborate and submit to CIER a detailed project plan with development iterations/modules, monthly milestones, deliverable schedule, and payment triggers. Plan must be evaluated, adjusted and approved by CIER.",
+          "estimated_duration_days": 4,
+          "team": [
+            {
+              "role": "Project Manager",
+              "position": "Team Leader",
+              "skills": "Project planning, agile/iterative methodology, risk management",
+              "estimated_person_days": 4
+            },
+            {
+              "role": "Lead Software Architect / Full-Stack Developer",
+              "position": "Lead Specialist",
+              "skills": "Technical effort estimation, module breakdown",
+              "estimated_person_days": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "deliverable_order": 2,
+      "deliverable_name": "First Partial Report – Energy Market Analysis Document",
+      "description": "Document analysing energy market models of Latin America (South America + Central America/Caribbean/Mexico: 17 countries total) and key international reference markets (NORDPOOL, MIBEL, PJM, Australia, UK, Germany). Includes fixed/variable information inventory, standardised market parameters with homologated definitions and calculation methodologies, update periodicities, and a validated general portal wireframe/sketch. Triggers the second 20% payment.",
+      "deadline_in_days": 50,
+      "deliverable_duration_days": 35,
+      "activities": [
+        {
+          "activity": "Research and documentation of LAC regional energy markets",
+          "description": "Study and document market models for South America (Argentina, Bolivia, Brazil, Chile, Colombia, Ecuador, Paraguay, Peru, Uruguay) and Central America/Caribbean/Mexico (Costa Rica, El Salvador, Guatemala, Panama, Nicaragua, Honduras, Dominican Republic, Mexico). Cover institutional structures, market participants, market types, price formation mechanisms, market variables, ancillary services, and applicable regulation.",
+          "estimated_duration_days": 15,
+          "team": [
+            {
+              "role": "Senior Energy Market Analyst",
+              "position": "Expert",
+              "skills": "LAC energy market expertise, regulatory frameworks, technical report writing, research",
+              "estimated_person_days": 8
+            },
+            {
+              "role": "Energy Market Analyst",
+              "position": "Lead Analyst",
+              "skills": "Energy market research, data collection, technical writing, stakeholder coordination with country representatives",
+              "estimated_person_days": 15
+            }
+          ]
+        },
+        {
+          "activity": "Research and documentation of international reference markets",
+          "description": "Study and document NORDPOOL (Nordic countries), MIBEL (Iberian Peninsula), PJM (USA), Australian NEM, UK electricity market, and German energy market. Analysis aimed at content construction, not as benchmark for portal format or technology.",
+          "estimated_duration_days": 10,
+          "team": [
+            {
+              "role": "Senior Energy Market Analyst",
+              "position": "Expert",
+              "skills": "International energy market expertise, comparative market analysis, technical writing",
+              "estimated_person_days": 6
+            },
+            {
+              "role": "Energy Market Analyst",
+              "position": "Lead Analyst",
+              "skills": "Research, technical writing, data collection from international sources",
+              "estimated_person_days": 10
+            }
+          ]
+        },
+        {
+          "activity": "Market parameter inventory and standardisation",
+          "description": "Compile inventory of market parameters available on each market operator's website; establish standard parameters per market; homologate definitions and calculation methodologies; define update periodicity (daily/weekly/monthly/annual) and selection criteria. Coordinate with GT O&AM based on prior working group exercise.",
+          "estimated_duration_days": 7,
+          "team": [
+            {
+              "role": "Senior Energy Market Analyst",
+              "position": "Expert",
+              "skills": "Market data standardisation, parameter homologation, GT O&AM coordination",
+              "estimated_person_days": 4
+            },
+            {
+              "role": "Energy Market Analyst",
+              "position": "Lead Analyst",
+              "skills": "Data collection, parameter inventory, stakeholder coordination",
+              "estimated_person_days": 7
+            },
+            {
+              "role": "Project Manager",
+              "position": "Team Leader",
+              "skills": "Coordination with GT O&AM working group",
+              "estimated_person_days": 2
+            }
+          ]
+        },
+        {
+          "activity": "Portal general wireframe/sketch design",
+          "description": "Design a general sketch (boceto) of the portal homepage and main sections showing how value-added information will be displayed, for validation with CIER and GT O&AM.",
+          "estimated_duration_days": 3,
+          "team": [
+            {
+              "role": "UX/UI Designer & Frontend Developer",
+              "position": "Lead Analyst",
+              "skills": "UX/UI design, information architecture, wireframing tools",
+              "estimated_person_days": 3
+            },
+            {
+              "role": "Business Analyst / Documentation & QA Specialist",
+              "position": "Specialist",
+              "skills": "Information architecture, content structure requirements",
+              "estimated_person_days": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "deliverable_order": 3,
+      "deliverable_name": "Second Partial Report – Portal Design, Architecture & Prototype",
+      "description": "Detailed analysis and design artefacts: validated UI prototypes for all major portal sections, general and detailed technical architecture, database design, LDAP-based security model, information loading mechanisms (XML/XLS), multilingual structure (ES/EN/PT), data exchange mechanisms (web services, flat files, DB connections), future App integration provisions, and functional interactive world map application showing market models per country. Triggers the third 20% payment.",
+      "deadline_in_days": 75,
+      "deliverable_duration_days": 25,
+      "activities": [
+        {
+          "activity": "Detailed analysis and prototype design",
+          "description": "Elaborate detailed system analysis including validated UI prototypes for all major portal sections; define static/dynamic content structure, update periodicities, and XML/XLS data loading mechanisms for authorised users.",
+          "estimated_duration_days": 10,
+          "team": [
+            {
+              "role": "UX/UI Designer & Frontend Developer",
+              "position": "Lead Analyst",
+              "skills": "UI prototyping, Figma/Sketch/Adobe XD, user experience design, multilingual interface",
+              "estimated_person_days": 10
+            },
+            {
+              "role": "Business Analyst / Documentation & QA Specialist",
+              "position": "Specialist",
+              "skills": "Functional specifications, content structure analysis, prototype validation",
+              "estimated_person_days": 6
+            },
+            {
+              "role": "Lead Software Architect / Full-Stack Developer",
+              "position": "Lead Specialist",
+              "skills": "Technical feasibility review of prototypes, data model alignment",
+              "estimated_person_days": 3
+            }
+          ]
+        },
+        {
+          "activity": "Technical architecture design",
+          "description": "Define general and detailed architecture of the portal: database schema, LDAP security model (access levels: public/restricted/premium/upload), integration with CIER's existing technology platform, REST APIs and web services, data exchange mechanisms, and future App integration provisions.",
+          "estimated_duration_days": 8,
+          "team": [
+            {
+              "role": "Lead Software Architect / Full-Stack Developer",
+              "position": "Lead Specialist",
+              "skills": "Software architecture, database design, LDAP/security architecture, REST API design, CIER platform integration",
+              "estimated_person_days": 8
+            },
+            {
+              "role": "Business Analyst / Documentation & QA Specialist",
+              "position": "Specialist",
+              "skills": "Architecture documentation, non-functional requirements validation",
+              "estimated_person_days": 2
+            }
+          ]
+        },
+        {
+          "activity": "Interactive world map application development",
+          "description": "Develop a functional interactive world map application allowing users to easily visualise and navigate to market model information for each selected country in the LAC region and internationally.",
+          "estimated_duration_days": 7,
+          "team": [
+            {
+              "role": "UX/UI Designer & Frontend Developer",
+              "position": "Lead Analyst",
+              "skills": "Frontend development, GIS/mapping libraries (Leaflet/Mapbox/Google Maps API), JavaScript",
+              "estimated_person_days": 7
+            },
+            {
+              "role": "Lead Software Architect / Full-Stack Developer",
+              "position": "Lead Specialist",
+              "skills": "Backend data integration for map, API endpoints for country market data",
+              "estimated_person_days": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "deliverable_order": 4,
+      "deliverable_name": "Final Report – Fully Operational Portal + Documentation",
+      "description": "Fully implemented and deployed Energy Market Portal on a CIER subdomain (www.cier.org), with all functional modules operational: multilingual content (ES/EN/PT), mobile-responsive design, LDAP access control (public/restricted/premium/upload roles), social media integration (LinkedIn, Facebook), RSS feed, traffic analytics and user tracking, data export to Excel, inactive credit card payment mechanism, periodic newsletter/bulletin functionality, cross-browser compatibility, and XML/XLS data upload by authorised users. Deliverable includes operations and maintenance manual, complete portal documentation, and training for CIER support staff. Triggers the final 40% payment upon CIER approval.",
+      "deadline_in_days": 120,
+      "deliverable_duration_days": 45,
+      "activities": [
+        {
+          "activity": "Portal development – backend and CMS",
+          "description": "Develop backend systems: relational database, content management, LDAP user authentication, multi-level access control (public/restricted/premium/upload), XML/XLS data upload interfaces for authorised country representatives, traffic analytics and user tracking, inactive credit card payment mechanism, RSS feed, newsletter/bulletin module, and report generation engine.",
+          "estimated_duration_days": 15,
+          "team": [
+            {
+              "role": "Lead Software Architect / Full-Stack Developer",
+              "position": "Lead Specialist",
+              "skills": "Backend development (Java/PHP/.NET/Python), database development, LDAP/authentication, CMS development, REST APIs, security implementation",
+              "estimated_person_days": 15
+            }
+          ]
+        },
+        {
+          "activity": "Portal development – frontend and responsive design",
+          "description": "Implement frontend following CIER graphic identity guidelines with proposed improvements: multilingual support (ES/EN/PT), responsive design for desktop/tablet/mobile, cross-browser compatibility (Chrome, Firefox, Safari, IE/Edge), social media integration (LinkedIn, Facebook sharing), RSS, data export to Excel, newsletter subscription, user-friendly report generation, and didactic information cards (fichas explicativas).",
+          "estimated_duration_days": 12,
+          "team": [
+            {
+              "role": "UX/UI Designer & Frontend Developer",
+              "position": "Lead Analyst",
+              "skills": "HTML5, CSS3, JavaScript (React/Vue/Angular), responsive/mobile-first, cross-browser, social media APIs, multilingual web",
+              "estimated_person_days": 12
+            },
+            {
+              "role": "Lead Software Architect / Full-Stack Developer",
+              "position": "Lead Specialist",
+              "skills": "Frontend-backend integration, API consumption, performance optimisation",
+              "estimated_person_days": 4
+            }
+          ]
+        },
+        {
+          "activity": "Content loading and value-added information publication",
+          "description": "Load all researched and standardised energy market content (static and dynamic) into the portal for all 17 LAC countries; configure data upload workflows and periodicities for authorised country representatives; validate content accuracy with Senior Energy Analyst.",
+          "estimated_duration_days": 8,
+          "team": [
+            {
+              "role": "Energy Market Analyst",
+              "position": "Lead Analyst",
+              "skills": "Content management, energy market knowledge, data entry and validation, XML/XLS data loading",
+              "estimated_person_days": 8
+            },
+            {
+              "role": "Senior Energy Market Analyst",
+              "position": "Expert",
+              "skills": "Content review, value-added information validation, accuracy assurance",
+              "estimated_person_days": 3
+            }
+          ]
+        },
+        {
+          "activity": "Testing, QA, and deployment",
+          "description": "Execute functional and non-functional testing across all modules and browsers; certify iterative deliverables; deploy to CIER production environment under CIER subdomain; execute acceptance procedure jointly with CIER. Functional testing led by Business Analyst; system and integration testing led by Lead Architect.",
+          "estimated_duration_days": 6,
+          "team": [
+            {
+              "role": "Business Analyst / Documentation & QA Specialist",
+              "position": "Specialist",
+              "skills": "Functional testing, test case design, cross-browser and mobile testing, user acceptance testing",
+              "estimated_person_days": 6
+            },
+            {
+              "role": "Lead Software Architect / Full-Stack Developer",
+              "position": "Lead Specialist",
+              "skills": "System and integration testing, deployment, DevOps, production environment configuration",
+              "estimated_person_days": 6
+            },
+            {
+              "role": "UX/UI Designer & Frontend Developer",
+              "position": "Lead Analyst",
+              "skills": "Frontend and UI testing, cross-browser validation, responsive design verification",
+              "estimated_person_days": 3
+            }
+          ]
+        },
+        {
+          "activity": "Training, documentation and handover",
+          "description": "Deliver technical and functional training to CIER support staff and designated administrators; produce and hand over operations and maintenance manual; complete portal features and architecture documentation. Technical system documentation by Lead Architect; user-facing documentation and training by Business Analyst.",
+          "estimated_duration_days": 4,
+          "team": [
+            {
+              "role": "Business Analyst / Documentation & QA Specialist",
+              "position": "Specialist",
+              "skills": "Technical writing, operations manuals, training delivery, knowledge transfer",
+              "estimated_person_days": 4
+            },
+            {
+              "role": "Lead Software Architect / Full-Stack Developer",
+              "position": "Lead Specialist",
+              "skills": "System-level technical documentation, architecture documentation",
+              "estimated_person_days": 2
+            },
+            {
+              "role": "Project Manager",
+              "position": "Team Leader",
+              "skills": "Handover coordination, final report compilation, CIER approval management",
+              "estimated_person_days": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

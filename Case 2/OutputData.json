@@ -1,0 +1,2359 @@
+﻿{
+    "viable": true,
+    "fitness_score": 0.6551038444542643,
+    "generations_run": 150,
+    "max_end_day": 364,
+    "deadline_days": 1008,
+    "within_deadline": true,
+    "total_activities": 20,
+    "outsourced_count": 0,
+    "summary": {
+        "status": "✓ Viable – all roles staffed",
+        "total_cost_usd": 241520.0,
+        "roles_staffed": 20,
+        "roles_outsourced": 0,
+        "project_duration_days": 364,
+        "deadline_days": 1008,
+        "within_deadline": true
+    },
+    "deliverables": [
+        {
+            "order": 1,
+            "name": "Inception Report and Detailed Work Plan",
+            "deadline_in_days": 30,
+            "total_cost_usd": 21120.0,
+            "activities": [
+                {
+                    "name": "Project Initiation",
+                    "start_day": 0,
+                    "end_day": 28,
+                    "status": "✓ Fully staffed",
+                    "solutions": [
+                        {
+                            "rank": 1,
+                            "cost": 21120.0,
+                            "real_cost": 21120.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Project Manager",
+                                    "position": "Team Leader",
+                                    "employee_id": "sandra.ramos@tcc2026.com.br",
+                                    "employee_name": "Sandra Ramos",
+                                    "employee_position": "Team Leader",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Project and Program Management",
+                                        "Distribution Networks and Retail Electricity",
+                                        "Communication, Presentation and Documentation"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "communication, presentation and documentation",
+                                        "distribution networks and retail electricity",
+                                        "project and program management"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-05",
+                                        "2026-06-08",
+                                        "2026-06-09",
+                                        "2026-06-10",
+                                        "2026-06-11",
+                                        "2026-06-12",
+                                        "2026-06-15",
+                                        "2026-06-16",
+                                        "2026-06-17",
+                                        "2026-06-18",
+                                        "2026-06-19",
+                                        "2026-06-22"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Geospatial Planning Expert",
+                                    "position": "Expert",
+                                    "employee_id": "carlos.mendes@tcc2026.com.br",
+                                    "employee_name": "Carlos Mendes",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "GIS, Spatial and Mapping Analysis",
+                                        "Data Management, Databases and BI"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "data management, databases and bi",
+                                        "gis, spatial and mapping analysis"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-05",
+                                        "2026-06-08",
+                                        "2026-06-09",
+                                        "2026-06-10",
+                                        "2026-06-11",
+                                        "2026-06-12",
+                                        "2026-06-15",
+                                        "2026-06-16"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 2,
+                                    "role": "Rural Electrification Expert",
+                                    "position": "Expert",
+                                    "employee_id": "sofia.oliveira@tcc2026.com.br",
+                                    "employee_name": "Sofia Oliveira",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Energy Systems Integration and Flexibility",
+                                        "Renewable and Low-Carbon Generation Technologies",
+                                        "Distribution Networks and Retail Electricity"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "distribution networks and retail electricity",
+                                        "energy systems integration and flexibility",
+                                        "renewable and low-carbon generation technologies"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-05",
+                                        "2026-06-08",
+                                        "2026-06-09",
+                                        "2026-06-10",
+                                        "2026-06-11",
+                                        "2026-06-12"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 2,
+                            "cost": 24000.0,
+                            "real_cost": 21120.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Project Manager",
+                                    "position": "Team Leader",
+                                    "employee_id": "sandra.ramos@tcc2026.com.br",
+                                    "employee_name": "Sandra Ramos",
+                                    "employee_position": "Team Leader",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Project and Program Management",
+                                        "Distribution Networks and Retail Electricity",
+                                        "Communication, Presentation and Documentation"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "communication, presentation and documentation",
+                                        "distribution networks and retail electricity",
+                                        "project and program management"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-05",
+                                        "2026-06-08",
+                                        "2026-06-09",
+                                        "2026-06-10",
+                                        "2026-06-11",
+                                        "2026-06-12",
+                                        "2026-06-15",
+                                        "2026-06-16",
+                                        "2026-06-17",
+                                        "2026-06-18",
+                                        "2026-06-19",
+                                        "2026-06-22"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Geospatial Planning Expert",
+                                    "position": "Expert",
+                                    "employee_id": "carlos.mendes@tcc2026.com.br",
+                                    "employee_name": "Carlos Mendes",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "GIS, Spatial and Mapping Analysis",
+                                        "Data Management, Databases and BI"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "data management, databases and bi",
+                                        "gis, spatial and mapping analysis"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-05",
+                                        "2026-06-08",
+                                        "2026-06-09",
+                                        "2026-06-10",
+                                        "2026-06-11",
+                                        "2026-06-12",
+                                        "2026-06-15",
+                                        "2026-06-16"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 2,
+                                    "role": "Rural Electrification Expert",
+                                    "position": "Expert",
+                                    "employee_id": "sergio.rodrigues@tcc2026.com.br",
+                                    "employee_name": "Sergio Rodrigues",
+                                    "employee_position": "Expert",
+                                    "skill_match_score": 0.6667,
+                                    "required_macro_skills": [
+                                        "Energy Systems Integration and Flexibility",
+                                        "Renewable and Low-Carbon Generation Technologies",
+                                        "Distribution Networks and Retail Electricity"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "energy systems integration and flexibility",
+                                        "renewable and low-carbon generation technologies"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-05",
+                                        "2026-06-08",
+                                        "2026-06-09",
+                                        "2026-06-10",
+                                        "2026-06-11",
+                                        "2026-06-12"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 3,
+                            "cost": 30720.0,
+                            "real_cost": 24960.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Project Manager",
+                                    "position": "Team Leader",
+                                    "employee_id": "sergio.rodrigues@tcc2026.com.br",
+                                    "employee_name": "Sergio Rodrigues",
+                                    "employee_position": "Expert",
+                                    "skill_match_score": 0.6667,
+                                    "required_macro_skills": [
+                                        "Project and Program Management",
+                                        "Distribution Networks and Retail Electricity",
+                                        "Communication, Presentation and Documentation"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "communication, presentation and documentation",
+                                        "project and program management"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-05",
+                                        "2026-06-08",
+                                        "2026-06-09",
+                                        "2026-06-10",
+                                        "2026-06-11",
+                                        "2026-06-12",
+                                        "2026-06-15",
+                                        "2026-06-16",
+                                        "2026-06-17",
+                                        "2026-06-18",
+                                        "2026-06-19",
+                                        "2026-06-22"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Geospatial Planning Expert",
+                                    "position": "Expert",
+                                    "employee_id": "carlos.mendes@tcc2026.com.br",
+                                    "employee_name": "Carlos Mendes",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "GIS, Spatial and Mapping Analysis",
+                                        "Data Management, Databases and BI"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "data management, databases and bi",
+                                        "gis, spatial and mapping analysis"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-05",
+                                        "2026-06-08",
+                                        "2026-06-09",
+                                        "2026-06-10",
+                                        "2026-06-11",
+                                        "2026-06-12",
+                                        "2026-06-15",
+                                        "2026-06-16"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 2,
+                                    "role": "Rural Electrification Expert",
+                                    "position": "Expert",
+                                    "employee_id": "sofia.oliveira@tcc2026.com.br",
+                                    "employee_name": "Sofia Oliveira",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Energy Systems Integration and Flexibility",
+                                        "Renewable and Low-Carbon Generation Technologies",
+                                        "Distribution Networks and Retail Electricity"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "distribution networks and retail electricity",
+                                        "energy systems integration and flexibility",
+                                        "renewable and low-carbon generation technologies"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-06-05",
+                                        "2026-06-08",
+                                        "2026-06-09",
+                                        "2026-06-10",
+                                        "2026-06-11",
+                                        "2026-06-12"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "order": 2,
+            "name": "Beneficiary Georeferenced Database",
+            "deadline_in_days": 90,
+            "total_cost_usd": 49200.0,
+            "activities": [
+                {
+                    "name": "Beneficiary Identification",
+                    "start_day": 28,
+                    "end_day": 77,
+                    "status": "✓ Fully staffed",
+                    "solutions": [
+                        {
+                            "rank": 1,
+                            "cost": 36800.0,
+                            "real_cost": 32800.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Geospatial Planning Expert",
+                                    "position": "Expert",
+                                    "employee_id": "carlos.mendes@tcc2026.com.br",
+                                    "employee_name": "Carlos Mendes",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "GIS, Spatial and Mapping Analysis",
+                                        "Data Management, Databases and BI"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "data management, databases and bi",
+                                        "gis, spatial and mapping analysis"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-07-03",
+                                        "2026-07-06",
+                                        "2026-07-07",
+                                        "2026-07-08",
+                                        "2026-07-09",
+                                        "2026-07-10",
+                                        "2026-07-13",
+                                        "2026-07-14",
+                                        "2026-07-15",
+                                        "2026-07-16",
+                                        "2026-07-17",
+                                        "2026-07-20",
+                                        "2026-07-21",
+                                        "2026-07-22",
+                                        "2026-07-23",
+                                        "2026-07-24",
+                                        "2026-07-27",
+                                        "2026-07-28",
+                                        "2026-07-29",
+                                        "2026-07-30",
+                                        "2026-07-31",
+                                        "2026-08-03",
+                                        "2026-08-04",
+                                        "2026-08-05",
+                                        "2026-08-06",
+                                        "2026-08-07",
+                                        "2026-08-10",
+                                        "2026-08-11",
+                                        "2026-08-12",
+                                        "2026-08-13"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "GIS Analyst",
+                                    "position": "Lead Analyst",
+                                    "employee_id": "jean.dupont@tcc2026.com.br",
+                                    "employee_name": "Jean Dupont",
+                                    "employee_position": "Lead Analyst",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "GIS, Spatial and Mapping Analysis",
+                                        "Data Management, Databases and BI"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "data management, databases and bi"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-07-03",
+                                        "2026-07-06",
+                                        "2026-07-07",
+                                        "2026-07-08",
+                                        "2026-07-09",
+                                        "2026-07-10",
+                                        "2026-07-13",
+                                        "2026-07-14",
+                                        "2026-07-15",
+                                        "2026-07-16",
+                                        "2026-07-17",
+                                        "2026-07-20",
+                                        "2026-07-21",
+                                        "2026-07-22",
+                                        "2026-07-23",
+                                        "2026-07-24",
+                                        "2026-07-27",
+                                        "2026-07-28",
+                                        "2026-07-29",
+                                        "2026-07-30",
+                                        "2026-07-31",
+                                        "2026-08-03",
+                                        "2026-08-04",
+                                        "2026-08-05",
+                                        "2026-08-06"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 2,
+                            "cost": 36800.0,
+                            "real_cost": 30000.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Geospatial Planning Expert",
+                                    "position": "Expert",
+                                    "employee_id": "carlos.mendes@tcc2026.com.br",
+                                    "employee_name": "Carlos Mendes",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "GIS, Spatial and Mapping Analysis",
+                                        "Data Management, Databases and BI"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "data management, databases and bi",
+                                        "gis, spatial and mapping analysis"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-07-03",
+                                        "2026-07-06",
+                                        "2026-07-07",
+                                        "2026-07-08",
+                                        "2026-07-09",
+                                        "2026-07-10",
+                                        "2026-07-13",
+                                        "2026-07-14",
+                                        "2026-07-15",
+                                        "2026-07-16",
+                                        "2026-07-17",
+                                        "2026-07-20",
+                                        "2026-07-21",
+                                        "2026-07-22",
+                                        "2026-07-23",
+                                        "2026-07-24",
+                                        "2026-07-27",
+                                        "2026-07-28",
+                                        "2026-07-29",
+                                        "2026-07-30",
+                                        "2026-07-31",
+                                        "2026-08-03",
+                                        "2026-08-04",
+                                        "2026-08-05",
+                                        "2026-08-06",
+                                        "2026-08-07",
+                                        "2026-08-10",
+                                        "2026-08-11",
+                                        "2026-08-12",
+                                        "2026-08-13"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "GIS Analyst",
+                                    "position": "Lead Analyst",
+                                    "employee_id": "valentina.cruz@tcc2026.com.br",
+                                    "employee_name": "Valentina Cruz",
+                                    "employee_position": "Intern",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "GIS, Spatial and Mapping Analysis",
+                                        "Data Management, Databases and BI"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "data management, databases and bi",
+                                        "gis, spatial and mapping analysis"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-07-03",
+                                        "2026-07-06",
+                                        "2026-07-07",
+                                        "2026-07-08",
+                                        "2026-07-09",
+                                        "2026-07-10",
+                                        "2026-07-13",
+                                        "2026-07-14",
+                                        "2026-07-15",
+                                        "2026-07-16",
+                                        "2026-07-17",
+                                        "2026-07-20",
+                                        "2026-07-21",
+                                        "2026-07-22",
+                                        "2026-07-23",
+                                        "2026-07-24",
+                                        "2026-07-27",
+                                        "2026-07-28",
+                                        "2026-07-29",
+                                        "2026-07-30",
+                                        "2026-07-31",
+                                        "2026-08-03",
+                                        "2026-08-04",
+                                        "2026-08-05",
+                                        "2026-08-06"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 3,
+                            "cost": 40800.0,
+                            "real_cost": 31200.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Geospatial Planning Expert",
+                                    "position": "Expert",
+                                    "employee_id": "carlos.mendes@tcc2026.com.br",
+                                    "employee_name": "Carlos Mendes",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "GIS, Spatial and Mapping Analysis",
+                                        "Data Management, Databases and BI"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "data management, databases and bi",
+                                        "gis, spatial and mapping analysis"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-07-03",
+                                        "2026-07-06",
+                                        "2026-07-07",
+                                        "2026-07-08",
+                                        "2026-07-09",
+                                        "2026-07-10",
+                                        "2026-07-13",
+                                        "2026-07-14",
+                                        "2026-07-15",
+                                        "2026-07-16",
+                                        "2026-07-17",
+                                        "2026-07-20",
+                                        "2026-07-21",
+                                        "2026-07-22",
+                                        "2026-07-23",
+                                        "2026-07-24",
+                                        "2026-07-27",
+                                        "2026-07-28",
+                                        "2026-07-29",
+                                        "2026-07-30",
+                                        "2026-07-31",
+                                        "2026-08-03",
+                                        "2026-08-04",
+                                        "2026-08-05",
+                                        "2026-08-06",
+                                        "2026-08-07",
+                                        "2026-08-10",
+                                        "2026-08-11",
+                                        "2026-08-12",
+                                        "2026-08-13"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "GIS Analyst",
+                                    "position": "Lead Analyst",
+                                    "employee_id": "yasmine.ferreira@tcc2026.com.br",
+                                    "employee_name": "Yasmine Ferreira",
+                                    "employee_position": "Analyst",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "GIS, Spatial and Mapping Analysis",
+                                        "Data Management, Databases and BI"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "data management, databases and bi"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-07-03",
+                                        "2026-07-06",
+                                        "2026-07-07",
+                                        "2026-07-08",
+                                        "2026-07-09",
+                                        "2026-07-10",
+                                        "2026-07-13",
+                                        "2026-07-14",
+                                        "2026-07-15",
+                                        "2026-07-16",
+                                        "2026-07-17",
+                                        "2026-07-20",
+                                        "2026-07-21",
+                                        "2026-07-22",
+                                        "2026-07-23",
+                                        "2026-07-24",
+                                        "2026-07-27",
+                                        "2026-07-28",
+                                        "2026-07-29",
+                                        "2026-07-30",
+                                        "2026-07-31",
+                                        "2026-08-03",
+                                        "2026-08-04",
+                                        "2026-08-05",
+                                        "2026-08-06"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Data Validation and Classification",
+                    "start_day": 77,
+                    "end_day": 112,
+                    "status": "✓ Fully staffed",
+                    "solutions": [
+                        {
+                            "rank": 1,
+                            "cost": 33600.0,
+                            "real_cost": 16400.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Geospatial Planning Expert",
+                                    "position": "Expert",
+                                    "employee_id": "carlos.mendes@tcc2026.com.br",
+                                    "employee_name": "Carlos Mendes",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "GIS, Spatial and Mapping Analysis",
+                                        "Quality Assurance, Testing and Validation"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "gis, spatial and mapping analysis"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-08-21",
+                                        "2026-08-24",
+                                        "2026-08-25",
+                                        "2026-08-26",
+                                        "2026-08-27",
+                                        "2026-08-28",
+                                        "2026-08-31",
+                                        "2026-09-01",
+                                        "2026-09-02",
+                                        "2026-09-03",
+                                        "2026-09-04",
+                                        "2026-09-07",
+                                        "2026-09-08",
+                                        "2026-09-09",
+                                        "2026-09-10"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Project Manager",
+                                    "position": "Team Leader",
+                                    "employee_id": "marcelo.teixeira@tcc2026.com.br",
+                                    "employee_name": "Marcelo Teixeira",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Quality Assurance, Testing and Validation",
+                                        "Project and Program Management"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "project and program management",
+                                        "quality assurance, testing and validation"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-08-21",
+                                        "2026-08-24",
+                                        "2026-08-25",
+                                        "2026-08-26",
+                                        "2026-08-27"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 2,
+                            "cost": 33600.0,
+                            "real_cost": 16400.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Geospatial Planning Expert",
+                                    "position": "Expert",
+                                    "employee_id": "carlos.mendes@tcc2026.com.br",
+                                    "employee_name": "Carlos Mendes",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "GIS, Spatial and Mapping Analysis",
+                                        "Quality Assurance, Testing and Validation"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "gis, spatial and mapping analysis"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-08-21",
+                                        "2026-08-24",
+                                        "2026-08-25",
+                                        "2026-08-26",
+                                        "2026-08-27",
+                                        "2026-08-28",
+                                        "2026-08-31",
+                                        "2026-09-01",
+                                        "2026-09-02",
+                                        "2026-09-03",
+                                        "2026-09-04",
+                                        "2026-09-07",
+                                        "2026-09-08",
+                                        "2026-09-09",
+                                        "2026-09-10"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Project Manager",
+                                    "position": "Team Leader",
+                                    "employee_id": "wesley.moraes@tcc2026.com.br",
+                                    "employee_name": "Wesley Moraes",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Quality Assurance, Testing and Validation",
+                                        "Project and Program Management"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "project and program management",
+                                        "quality assurance, testing and validation"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-08-21",
+                                        "2026-08-24",
+                                        "2026-08-25",
+                                        "2026-08-26",
+                                        "2026-08-27"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 3,
+                            "cost": 35200.0,
+                            "real_cost": 17600.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Geospatial Planning Expert",
+                                    "position": "Expert",
+                                    "employee_id": "carlos.mendes@tcc2026.com.br",
+                                    "employee_name": "Carlos Mendes",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "GIS, Spatial and Mapping Analysis",
+                                        "Quality Assurance, Testing and Validation"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "gis, spatial and mapping analysis"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-08-21",
+                                        "2026-08-24",
+                                        "2026-08-25",
+                                        "2026-08-26",
+                                        "2026-08-27",
+                                        "2026-08-28",
+                                        "2026-08-31",
+                                        "2026-09-01",
+                                        "2026-09-02",
+                                        "2026-09-03",
+                                        "2026-09-04",
+                                        "2026-09-07",
+                                        "2026-09-08",
+                                        "2026-09-09",
+                                        "2026-09-10"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Project Manager",
+                                    "position": "Team Leader",
+                                    "employee_id": "sandra.ramos@tcc2026.com.br",
+                                    "employee_name": "Sandra Ramos",
+                                    "employee_position": "Team Leader",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Quality Assurance, Testing and Validation",
+                                        "Project and Program Management"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "project and program management"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-08-21",
+                                        "2026-08-24",
+                                        "2026-08-25",
+                                        "2026-08-26",
+                                        "2026-08-27"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "order": 3,
+            "name": "Baseline Energy Demand Assessment",
+            "deadline_in_days": 120,
+            "total_cost_usd": 25200.0,
+            "activities": [
+                {
+                    "name": "Demand Forecasting",
+                    "start_day": 112,
+                    "end_day": 154,
+                    "status": "✓ Fully staffed",
+                    "solutions": [
+                        {
+                            "rank": 1,
+                            "cost": 40800.0,
+                            "real_cost": 25200.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Rural Electrification Expert",
+                                    "position": "Expert",
+                                    "employee_id": "sofia.oliveira@tcc2026.com.br",
+                                    "employee_name": "Sofia Oliveira",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 0.6667,
+                                    "required_macro_skills": [
+                                        "Power Systems Planning and Operations",
+                                        "Distribution Networks and Retail Electricity",
+                                        "Power Market Analysis and Market Design"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "distribution networks and retail electricity",
+                                        "power systems planning and operations"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-09-25",
+                                        "2026-09-28",
+                                        "2026-09-29",
+                                        "2026-09-30",
+                                        "2026-10-01",
+                                        "2026-10-02",
+                                        "2026-10-05",
+                                        "2026-10-06",
+                                        "2026-10-07",
+                                        "2026-10-08",
+                                        "2026-10-09",
+                                        "2026-10-12",
+                                        "2026-10-13",
+                                        "2026-10-14",
+                                        "2026-10-15",
+                                        "2026-10-16",
+                                        "2026-10-19",
+                                        "2026-10-20",
+                                        "2026-10-21",
+                                        "2026-10-22"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Energy Analyst",
+                                    "position": "Lead Specialist",
+                                    "employee_id": "wesley.moraes@tcc2026.com.br",
+                                    "employee_name": "Wesley Moraes",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Research Methods and Statistical Analysis",
+                                        "Risk, Uncertainty and Scenario Analysis"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "risk, uncertainty and scenario analysis"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-09-25",
+                                        "2026-09-28",
+                                        "2026-09-29",
+                                        "2026-09-30",
+                                        "2026-10-01",
+                                        "2026-10-02",
+                                        "2026-10-05",
+                                        "2026-10-06",
+                                        "2026-10-07",
+                                        "2026-10-08",
+                                        "2026-10-09",
+                                        "2026-10-12",
+                                        "2026-10-13",
+                                        "2026-10-14",
+                                        "2026-10-15"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 2,
+                            "cost": 40800.0,
+                            "real_cost": 25200.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Rural Electrification Expert",
+                                    "position": "Expert",
+                                    "employee_id": "sofia.oliveira@tcc2026.com.br",
+                                    "employee_name": "Sofia Oliveira",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 0.6667,
+                                    "required_macro_skills": [
+                                        "Power Systems Planning and Operations",
+                                        "Distribution Networks and Retail Electricity",
+                                        "Power Market Analysis and Market Design"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "distribution networks and retail electricity",
+                                        "power systems planning and operations"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-09-25",
+                                        "2026-09-28",
+                                        "2026-09-29",
+                                        "2026-09-30",
+                                        "2026-10-01",
+                                        "2026-10-02",
+                                        "2026-10-05",
+                                        "2026-10-06",
+                                        "2026-10-07",
+                                        "2026-10-08",
+                                        "2026-10-09",
+                                        "2026-10-12",
+                                        "2026-10-13",
+                                        "2026-10-14",
+                                        "2026-10-15",
+                                        "2026-10-16",
+                                        "2026-10-19",
+                                        "2026-10-20",
+                                        "2026-10-21",
+                                        "2026-10-22"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Energy Analyst",
+                                    "position": "Lead Specialist",
+                                    "employee_id": "renato.nogueira@tcc2026.com.br",
+                                    "employee_name": "Renato Nogueira",
+                                    "employee_position": "Lead Specialist",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Research Methods and Statistical Analysis",
+                                        "Risk, Uncertainty and Scenario Analysis"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "risk, uncertainty and scenario analysis"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-09-25",
+                                        "2026-09-28",
+                                        "2026-09-29",
+                                        "2026-09-30",
+                                        "2026-10-01",
+                                        "2026-10-02",
+                                        "2026-10-05",
+                                        "2026-10-06",
+                                        "2026-10-07",
+                                        "2026-10-08",
+                                        "2026-10-09",
+                                        "2026-10-12",
+                                        "2026-10-13",
+                                        "2026-10-14",
+                                        "2026-10-15"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 3,
+                            "cost": 43200.0,
+                            "real_cost": 33600.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Rural Electrification Expert",
+                                    "position": "Expert",
+                                    "employee_id": "sofia.oliveira@tcc2026.com.br",
+                                    "employee_name": "Sofia Oliveira",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 0.6667,
+                                    "required_macro_skills": [
+                                        "Power Systems Planning and Operations",
+                                        "Distribution Networks and Retail Electricity",
+                                        "Power Market Analysis and Market Design"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "distribution networks and retail electricity",
+                                        "power systems planning and operations"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-09-25",
+                                        "2026-09-28",
+                                        "2026-09-29",
+                                        "2026-09-30",
+                                        "2026-10-01",
+                                        "2026-10-02",
+                                        "2026-10-05",
+                                        "2026-10-06",
+                                        "2026-10-07",
+                                        "2026-10-08",
+                                        "2026-10-09",
+                                        "2026-10-12",
+                                        "2026-10-13",
+                                        "2026-10-14",
+                                        "2026-10-15",
+                                        "2026-10-16",
+                                        "2026-10-19",
+                                        "2026-10-20",
+                                        "2026-10-21",
+                                        "2026-10-22"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Energy Analyst",
+                                    "position": "Lead Specialist",
+                                    "employee_id": "patricia.gomes@tcc2026.com.br",
+                                    "employee_name": "Patricia Gomes",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Research Methods and Statistical Analysis",
+                                        "Risk, Uncertainty and Scenario Analysis"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "research methods and statistical analysis",
+                                        "risk, uncertainty and scenario analysis"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-09-25",
+                                        "2026-09-28",
+                                        "2026-09-29",
+                                        "2026-09-30",
+                                        "2026-10-01",
+                                        "2026-10-02",
+                                        "2026-10-05",
+                                        "2026-10-06",
+                                        "2026-10-07",
+                                        "2026-10-08",
+                                        "2026-10-09",
+                                        "2026-10-12",
+                                        "2026-10-13",
+                                        "2026-10-14",
+                                        "2026-10-15"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "order": 4,
+            "name": "Preliminary Universal Access Plan",
+            "deadline_in_days": 210,
+            "total_cost_usd": 101840.0,
+            "activities": [
+                {
+                    "name": "Optimization Model Development",
+                    "start_day": 154,
+                    "end_day": 217,
+                    "status": "✓ Fully staffed",
+                    "solutions": [
+                        {
+                            "rank": 1,
+                            "cost": 110400.0,
+                            "real_cost": 62400.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Geospatial Planning Expert",
+                                    "position": "Expert",
+                                    "employee_id": "carlos.mendes@tcc2026.com.br",
+                                    "employee_name": "Carlos Mendes",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "GIS, Spatial and Mapping Analysis",
+                                        "Operations Research and Optimization"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "gis, spatial and mapping analysis"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-11-06",
+                                        "2026-11-09",
+                                        "2026-11-10",
+                                        "2026-11-11",
+                                        "2026-11-12",
+                                        "2026-11-13",
+                                        "2026-11-16",
+                                        "2026-11-17",
+                                        "2026-11-18",
+                                        "2026-11-19",
+                                        "2026-11-20",
+                                        "2026-11-23",
+                                        "2026-11-24",
+                                        "2026-11-25",
+                                        "2026-11-26",
+                                        "2026-11-27",
+                                        "2026-11-30",
+                                        "2026-12-01",
+                                        "2026-12-02",
+                                        "2026-12-03",
+                                        "2026-12-04",
+                                        "2026-12-07",
+                                        "2026-12-08",
+                                        "2026-12-09",
+                                        "2026-12-10",
+                                        "2026-12-11",
+                                        "2026-12-14",
+                                        "2026-12-15",
+                                        "2026-12-16",
+                                        "2026-12-17",
+                                        "2026-12-18",
+                                        "2026-12-21",
+                                        "2026-12-22",
+                                        "2026-12-23",
+                                        "2026-12-24"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Rural Electrification Expert",
+                                    "position": "Expert",
+                                    "employee_id": "sofia.oliveira@tcc2026.com.br",
+                                    "employee_name": "Sofia Oliveira",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 0.6667,
+                                    "required_macro_skills": [
+                                        "Renewable and Low-Carbon Generation Technologies",
+                                        "Distribution Networks and Retail Electricity",
+                                        "Power Sector Economics and Commercial Strategy"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "distribution networks and retail electricity",
+                                        "renewable and low-carbon generation technologies"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-11-06",
+                                        "2026-11-09",
+                                        "2026-11-10",
+                                        "2026-11-11",
+                                        "2026-11-12",
+                                        "2026-11-13",
+                                        "2026-11-16",
+                                        "2026-11-17",
+                                        "2026-11-18",
+                                        "2026-11-19",
+                                        "2026-11-20",
+                                        "2026-11-23",
+                                        "2026-11-24",
+                                        "2026-11-25",
+                                        "2026-11-26",
+                                        "2026-11-27",
+                                        "2026-11-30",
+                                        "2026-12-01",
+                                        "2026-12-02",
+                                        "2026-12-03",
+                                        "2026-12-04",
+                                        "2026-12-07",
+                                        "2026-12-08",
+                                        "2026-12-09",
+                                        "2026-12-10",
+                                        "2026-12-11",
+                                        "2026-12-14",
+                                        "2026-12-15",
+                                        "2026-12-16",
+                                        "2026-12-17"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 2,
+                            "cost": 110400.0,
+                            "real_cost": 62400.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Geospatial Planning Expert",
+                                    "position": "Expert",
+                                    "employee_id": "sergio.rodrigues@tcc2026.com.br",
+                                    "employee_name": "Sergio Rodrigues",
+                                    "employee_position": "Expert",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "GIS, Spatial and Mapping Analysis",
+                                        "Operations Research and Optimization"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "operations research and optimization"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-11-06",
+                                        "2026-11-09",
+                                        "2026-11-10",
+                                        "2026-11-11",
+                                        "2026-11-12",
+                                        "2026-11-13",
+                                        "2026-11-16",
+                                        "2026-11-17",
+                                        "2026-11-18",
+                                        "2026-11-19",
+                                        "2026-11-20",
+                                        "2026-11-23",
+                                        "2026-11-24",
+                                        "2026-11-25",
+                                        "2026-11-26",
+                                        "2026-11-27",
+                                        "2026-11-30",
+                                        "2026-12-01",
+                                        "2026-12-02",
+                                        "2026-12-03",
+                                        "2026-12-04",
+                                        "2026-12-07",
+                                        "2026-12-08",
+                                        "2026-12-09",
+                                        "2026-12-10",
+                                        "2026-12-11",
+                                        "2026-12-14",
+                                        "2026-12-15",
+                                        "2026-12-16",
+                                        "2026-12-17",
+                                        "2026-12-18",
+                                        "2026-12-21",
+                                        "2026-12-22",
+                                        "2026-12-23",
+                                        "2026-12-24"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Rural Electrification Expert",
+                                    "position": "Expert",
+                                    "employee_id": "sofia.oliveira@tcc2026.com.br",
+                                    "employee_name": "Sofia Oliveira",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 0.6667,
+                                    "required_macro_skills": [
+                                        "Renewable and Low-Carbon Generation Technologies",
+                                        "Distribution Networks and Retail Electricity",
+                                        "Power Sector Economics and Commercial Strategy"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "distribution networks and retail electricity",
+                                        "renewable and low-carbon generation technologies"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-11-06",
+                                        "2026-11-09",
+                                        "2026-11-10",
+                                        "2026-11-11",
+                                        "2026-11-12",
+                                        "2026-11-13",
+                                        "2026-11-16",
+                                        "2026-11-17",
+                                        "2026-11-18",
+                                        "2026-11-19",
+                                        "2026-11-20",
+                                        "2026-11-23",
+                                        "2026-11-24",
+                                        "2026-11-25",
+                                        "2026-11-26",
+                                        "2026-11-27",
+                                        "2026-11-30",
+                                        "2026-12-01",
+                                        "2026-12-02",
+                                        "2026-12-03",
+                                        "2026-12-04",
+                                        "2026-12-07",
+                                        "2026-12-08",
+                                        "2026-12-09",
+                                        "2026-12-10",
+                                        "2026-12-11",
+                                        "2026-12-14",
+                                        "2026-12-15",
+                                        "2026-12-16",
+                                        "2026-12-17"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 3,
+                            "cost": 110400.0,
+                            "real_cost": 62400.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Geospatial Planning Expert",
+                                    "position": "Expert",
+                                    "employee_id": "henrique.castro@tcc2026.com.br",
+                                    "employee_name": "Henrique Castro",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "GIS, Spatial and Mapping Analysis",
+                                        "Operations Research and Optimization"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "operations research and optimization"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-11-06",
+                                        "2026-11-09",
+                                        "2026-11-10",
+                                        "2026-11-11",
+                                        "2026-11-12",
+                                        "2026-11-13",
+                                        "2026-11-16",
+                                        "2026-11-17",
+                                        "2026-11-18",
+                                        "2026-11-19",
+                                        "2026-11-20",
+                                        "2026-11-23",
+                                        "2026-11-24",
+                                        "2026-11-25",
+                                        "2026-11-26",
+                                        "2026-11-27",
+                                        "2026-11-30",
+                                        "2026-12-01",
+                                        "2026-12-02",
+                                        "2026-12-03",
+                                        "2026-12-04",
+                                        "2026-12-07",
+                                        "2026-12-08",
+                                        "2026-12-09",
+                                        "2026-12-10",
+                                        "2026-12-11",
+                                        "2026-12-14",
+                                        "2026-12-15",
+                                        "2026-12-16",
+                                        "2026-12-17",
+                                        "2026-12-18",
+                                        "2026-12-21",
+                                        "2026-12-22",
+                                        "2026-12-23",
+                                        "2026-12-24"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Rural Electrification Expert",
+                                    "position": "Expert",
+                                    "employee_id": "sofia.oliveira@tcc2026.com.br",
+                                    "employee_name": "Sofia Oliveira",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 0.6667,
+                                    "required_macro_skills": [
+                                        "Renewable and Low-Carbon Generation Technologies",
+                                        "Distribution Networks and Retail Electricity",
+                                        "Power Sector Economics and Commercial Strategy"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "distribution networks and retail electricity",
+                                        "renewable and low-carbon generation technologies"
+                                    ],
+                                    "allocated_dates": [
+                                        "2026-11-06",
+                                        "2026-11-09",
+                                        "2026-11-10",
+                                        "2026-11-11",
+                                        "2026-11-12",
+                                        "2026-11-13",
+                                        "2026-11-16",
+                                        "2026-11-17",
+                                        "2026-11-18",
+                                        "2026-11-19",
+                                        "2026-11-20",
+                                        "2026-11-23",
+                                        "2026-11-24",
+                                        "2026-11-25",
+                                        "2026-11-26",
+                                        "2026-11-27",
+                                        "2026-11-30",
+                                        "2026-12-01",
+                                        "2026-12-02",
+                                        "2026-12-03",
+                                        "2026-12-04",
+                                        "2026-12-07",
+                                        "2026-12-08",
+                                        "2026-12-09",
+                                        "2026-12-10",
+                                        "2026-12-11",
+                                        "2026-12-14",
+                                        "2026-12-15",
+                                        "2026-12-16",
+                                        "2026-12-17"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        }
+                    ]
+                },
+                {
+                    "name": "CAPEX and OPEX Assessment",
+                    "start_day": 217,
+                    "end_day": 252,
+                    "status": "✓ Fully staffed",
+                    "solutions": [
+                        {
+                            "rank": 1,
+                            "cost": 31040.0,
+                            "real_cost": 31040.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Rural Electrification Expert",
+                                    "position": "Expert",
+                                    "employee_id": "eduardo.gomes@tcc2026.com.br",
+                                    "employee_name": "Eduardo Gomes",
+                                    "employee_position": "Technical Director",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Energy Investment, Finance and Valuation",
+                                        "Power Sector Economics and Commercial Strategy"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "energy investment, finance and valuation",
+                                        "power sector economics and commercial strategy"
+                                    ],
+                                    "allocated_dates": [
+                                        "2027-01-08",
+                                        "2027-01-11",
+                                        "2027-01-12",
+                                        "2027-01-13",
+                                        "2027-01-14",
+                                        "2027-01-15",
+                                        "2027-01-18",
+                                        "2027-01-19",
+                                        "2027-01-20",
+                                        "2027-01-21",
+                                        "2027-01-22",
+                                        "2027-01-25",
+                                        "2027-01-26",
+                                        "2027-01-27",
+                                        "2027-01-28",
+                                        "2027-01-29",
+                                        "2027-02-01",
+                                        "2027-02-02"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Project Manager",
+                                    "position": "Team Leader",
+                                    "employee_id": "sandra.ramos@tcc2026.com.br",
+                                    "employee_name": "Sandra Ramos",
+                                    "employee_position": "Team Leader",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Energy Investment, Finance and Valuation",
+                                        "Project and Program Management"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "energy investment, finance and valuation",
+                                        "project and program management"
+                                    ],
+                                    "allocated_dates": [
+                                        "2027-01-08",
+                                        "2027-01-11",
+                                        "2027-01-12",
+                                        "2027-01-13",
+                                        "2027-01-14",
+                                        "2027-01-15",
+                                        "2027-01-18",
+                                        "2027-01-19"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 2,
+                            "cost": 33600.0,
+                            "real_cost": 19200.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Rural Electrification Expert",
+                                    "position": "Expert",
+                                    "employee_id": "sandra.ramos@tcc2026.com.br",
+                                    "employee_name": "Sandra Ramos",
+                                    "employee_position": "Team Leader",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Energy Investment, Finance and Valuation",
+                                        "Power Sector Economics and Commercial Strategy"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "energy investment, finance and valuation",
+                                        "power sector economics and commercial strategy"
+                                    ],
+                                    "allocated_dates": [
+                                        "2027-01-08",
+                                        "2027-01-11",
+                                        "2027-01-12",
+                                        "2027-01-13",
+                                        "2027-01-14",
+                                        "2027-01-15",
+                                        "2027-01-18",
+                                        "2027-01-19",
+                                        "2027-01-20",
+                                        "2027-01-21",
+                                        "2027-01-22",
+                                        "2027-01-25",
+                                        "2027-01-26",
+                                        "2027-01-27",
+                                        "2027-01-28",
+                                        "2027-01-29",
+                                        "2027-02-01",
+                                        "2027-02-02"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Project Manager",
+                                    "position": "Team Leader",
+                                    "employee_id": "antonio.soares@tcc2026.com.br",
+                                    "employee_name": "Antonio Soares",
+                                    "employee_position": "Expert",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Energy Investment, Finance and Valuation",
+                                        "Project and Program Management"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "energy investment, finance and valuation",
+                                        "project and program management"
+                                    ],
+                                    "allocated_dates": [
+                                        "2027-01-08",
+                                        "2027-01-11",
+                                        "2027-01-12",
+                                        "2027-01-13",
+                                        "2027-01-14",
+                                        "2027-01-15",
+                                        "2027-01-18",
+                                        "2027-01-19"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 3,
+                            "cost": 33600.0,
+                            "real_cost": 19200.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Rural Electrification Expert",
+                                    "position": "Expert",
+                                    "employee_id": "sandra.ramos@tcc2026.com.br",
+                                    "employee_name": "Sandra Ramos",
+                                    "employee_position": "Team Leader",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Energy Investment, Finance and Valuation",
+                                        "Power Sector Economics and Commercial Strategy"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "energy investment, finance and valuation",
+                                        "power sector economics and commercial strategy"
+                                    ],
+                                    "allocated_dates": [
+                                        "2027-01-08",
+                                        "2027-01-11",
+                                        "2027-01-12",
+                                        "2027-01-13",
+                                        "2027-01-14",
+                                        "2027-01-15",
+                                        "2027-01-18",
+                                        "2027-01-19",
+                                        "2027-01-20",
+                                        "2027-01-21",
+                                        "2027-01-22",
+                                        "2027-01-25",
+                                        "2027-01-26",
+                                        "2027-01-27",
+                                        "2027-01-28",
+                                        "2027-01-29",
+                                        "2027-02-01",
+                                        "2027-02-02"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Project Manager",
+                                    "position": "Team Leader",
+                                    "employee_id": "sofia.oliveira@tcc2026.com.br",
+                                    "employee_name": "Sofia Oliveira",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Energy Investment, Finance and Valuation",
+                                        "Project and Program Management"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "energy investment, finance and valuation",
+                                        "project and program management"
+                                    ],
+                                    "allocated_dates": [
+                                        "2027-01-08",
+                                        "2027-01-11",
+                                        "2027-01-12",
+                                        "2027-01-13",
+                                        "2027-01-14",
+                                        "2027-01-15",
+                                        "2027-01-18",
+                                        "2027-01-19"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Environmental and Alternative Scenario Assessment",
+                    "start_day": 252,
+                    "end_day": 280,
+                    "status": "✓ Fully staffed",
+                    "solutions": [
+                        {
+                            "rank": 1,
+                            "cost": 17280.0,
+                            "real_cost": 8400.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Environmental Specialist",
+                                    "position": "Specialist",
+                                    "employee_id": "valentina.cruz@tcc2026.com.br",
+                                    "employee_name": "Valentina Cruz",
+                                    "employee_position": "Intern",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Sustainability, Environment and Resources"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "sustainability, environment and resources"
+                                    ],
+                                    "allocated_dates": [
+                                        "2027-02-12",
+                                        "2027-02-15",
+                                        "2027-02-16",
+                                        "2027-02-17",
+                                        "2027-02-18",
+                                        "2027-02-19",
+                                        "2027-02-22",
+                                        "2027-02-23",
+                                        "2027-02-24",
+                                        "2027-02-25",
+                                        "2027-02-26",
+                                        "2027-03-01",
+                                        "2027-03-02",
+                                        "2027-03-03",
+                                        "2027-03-04"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Geospatial Planning Expert",
+                                    "position": "Expert",
+                                    "employee_id": "antonio.soares@tcc2026.com.br",
+                                    "employee_name": "Antonio Soares",
+                                    "employee_position": "Expert",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Sustainability, Environment and Resources"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "sustainability, environment and resources"
+                                    ],
+                                    "allocated_dates": [
+                                        "2027-02-12",
+                                        "2027-02-15",
+                                        "2027-02-16",
+                                        "2027-02-17",
+                                        "2027-02-18",
+                                        "2027-02-19",
+                                        "2027-02-22",
+                                        "2027-02-23"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 2,
+                            "cost": 17280.0,
+                            "real_cost": 8400.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Environmental Specialist",
+                                    "position": "Specialist",
+                                    "employee_id": "valentina.cruz@tcc2026.com.br",
+                                    "employee_name": "Valentina Cruz",
+                                    "employee_position": "Intern",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Sustainability, Environment and Resources"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "sustainability, environment and resources"
+                                    ],
+                                    "allocated_dates": [
+                                        "2027-02-12",
+                                        "2027-02-15",
+                                        "2027-02-16",
+                                        "2027-02-17",
+                                        "2027-02-18",
+                                        "2027-02-19",
+                                        "2027-02-22",
+                                        "2027-02-23",
+                                        "2027-02-24",
+                                        "2027-02-25",
+                                        "2027-02-26",
+                                        "2027-03-01",
+                                        "2027-03-02",
+                                        "2027-03-03",
+                                        "2027-03-04"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Geospatial Planning Expert",
+                                    "position": "Expert",
+                                    "employee_id": "patricia.gomes@tcc2026.com.br",
+                                    "employee_name": "Patricia Gomes",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Sustainability, Environment and Resources"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "sustainability, environment and resources"
+                                    ],
+                                    "allocated_dates": [
+                                        "2027-02-12",
+                                        "2027-02-15",
+                                        "2027-02-16",
+                                        "2027-02-17",
+                                        "2027-02-18",
+                                        "2027-02-19",
+                                        "2027-02-22",
+                                        "2027-02-23"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 3,
+                            "cost": 19200.001,
+                            "real_cost": 19200.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 1,
+                                    "role": "Geospatial Planning Expert",
+                                    "position": "Expert",
+                                    "employee_id": "antonio.soares@tcc2026.com.br",
+                                    "employee_name": "Antonio Soares",
+                                    "employee_position": "Expert",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Sustainability, Environment and Resources"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "sustainability, environment and resources"
+                                    ],
+                                    "allocated_dates": [
+                                        "2027-02-12",
+                                        "2027-02-15",
+                                        "2027-02-16",
+                                        "2027-02-17",
+                                        "2027-02-18",
+                                        "2027-02-19",
+                                        "2027-02-22",
+                                        "2027-02-23"
+                                    ]
+                                }
+                            ],
+                            "gaps": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Environmental Specialist",
+                                    "required_position": "Specialist",
+                                    "required_macro_skills": [
+                                        "Sustainability, Environment and Resources"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "order": 5,
+            "name": "Final Universal Access Plan",
+            "deadline_in_days": 270,
+            "total_cost_usd": 44160.0,
+            "activities": [
+                {
+                    "name": "Stakeholder Workshops and Review",
+                    "start_day": 280,
+                    "end_day": 308,
+                    "status": "✓ Fully staffed",
+                    "solutions": [
+                        {
+                            "rank": 1,
+                            "cost": 23040.0,
+                            "real_cost": 15360.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Project Manager",
+                                    "position": "Team Leader",
+                                    "employee_id": "sandra.ramos@tcc2026.com.br",
+                                    "employee_name": "Sandra Ramos",
+                                    "employee_position": "Team Leader",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Communication, Presentation and Documentation",
+                                        "Project and Program Management"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "communication, presentation and documentation",
+                                        "project and program management"
+                                    ],
+                                    "allocated_dates": [
+                                        "2027-03-12",
+                                        "2027-03-15",
+                                        "2027-03-16",
+                                        "2027-03-17",
+                                        "2027-03-18",
+                                        "2027-03-19",
+                                        "2027-03-22",
+                                        "2027-03-23",
+                                        "2027-03-24",
+                                        "2027-03-25",
+                                        "2027-03-26",
+                                        "2027-03-29"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Rural Electrification Expert",
+                                    "position": "Expert",
+                                    "employee_id": "henrique.castro@tcc2026.com.br",
+                                    "employee_name": "Henrique Castro",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Communication, Presentation and Documentation",
+                                        "Quality Assurance, Testing and Validation"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "communication, presentation and documentation"
+                                    ],
+                                    "allocated_dates": [
+                                        "2027-03-12",
+                                        "2027-03-15",
+                                        "2027-03-16",
+                                        "2027-03-17",
+                                        "2027-03-18",
+                                        "2027-03-19",
+                                        "2027-03-22",
+                                        "2027-03-23"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 2,
+                            "cost": 23040.0,
+                            "real_cost": 15360.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Project Manager",
+                                    "position": "Team Leader",
+                                    "employee_id": "sandra.ramos@tcc2026.com.br",
+                                    "employee_name": "Sandra Ramos",
+                                    "employee_position": "Team Leader",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Communication, Presentation and Documentation",
+                                        "Project and Program Management"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "communication, presentation and documentation",
+                                        "project and program management"
+                                    ],
+                                    "allocated_dates": [
+                                        "2027-03-12",
+                                        "2027-03-15",
+                                        "2027-03-16",
+                                        "2027-03-17",
+                                        "2027-03-18",
+                                        "2027-03-19",
+                                        "2027-03-22",
+                                        "2027-03-23",
+                                        "2027-03-24",
+                                        "2027-03-25",
+                                        "2027-03-26",
+                                        "2027-03-29"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Rural Electrification Expert",
+                                    "position": "Expert",
+                                    "employee_id": "sergio.rodrigues@tcc2026.com.br",
+                                    "employee_name": "Sergio Rodrigues",
+                                    "employee_position": "Expert",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Communication, Presentation and Documentation",
+                                        "Quality Assurance, Testing and Validation"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "communication, presentation and documentation"
+                                    ],
+                                    "allocated_dates": [
+                                        "2027-03-12",
+                                        "2027-03-15",
+                                        "2027-03-16",
+                                        "2027-03-17",
+                                        "2027-03-18",
+                                        "2027-03-19",
+                                        "2027-03-22",
+                                        "2027-03-23"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 3,
+                            "cost": 26880.0,
+                            "real_cost": 19200.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Project Manager",
+                                    "position": "Team Leader",
+                                    "employee_id": "sergio.rodrigues@tcc2026.com.br",
+                                    "employee_name": "Sergio Rodrigues",
+                                    "employee_position": "Expert",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Communication, Presentation and Documentation",
+                                        "Project and Program Management"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "communication, presentation and documentation",
+                                        "project and program management"
+                                    ],
+                                    "allocated_dates": [
+                                        "2027-03-12",
+                                        "2027-03-15",
+                                        "2027-03-16",
+                                        "2027-03-17",
+                                        "2027-03-18",
+                                        "2027-03-19",
+                                        "2027-03-22",
+                                        "2027-03-23",
+                                        "2027-03-24",
+                                        "2027-03-25",
+                                        "2027-03-26",
+                                        "2027-03-29"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Rural Electrification Expert",
+                                    "position": "Expert",
+                                    "employee_id": "henrique.castro@tcc2026.com.br",
+                                    "employee_name": "Henrique Castro",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Communication, Presentation and Documentation",
+                                        "Quality Assurance, Testing and Validation"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "communication, presentation and documentation"
+                                    ],
+                                    "allocated_dates": [
+                                        "2027-03-12",
+                                        "2027-03-15",
+                                        "2027-03-16",
+                                        "2027-03-17",
+                                        "2027-03-18",
+                                        "2027-03-19",
+                                        "2027-03-22",
+                                        "2027-03-23"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Final Report and Prospectus",
+                    "start_day": 308,
+                    "end_day": 364,
+                    "status": "✓ Fully staffed",
+                    "solutions": [
+                        {
+                            "rank": 1,
+                            "cost": 48000.0,
+                            "real_cost": 28800.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Project Manager",
+                                    "position": "Team Leader",
+                                    "employee_id": "sandra.ramos@tcc2026.com.br",
+                                    "employee_name": "Sandra Ramos",
+                                    "employee_position": "Team Leader",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Research, Academia and Technical Writing",
+                                        "Project and Program Management"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "project and program management"
+                                    ],
+                                    "allocated_dates": [
+                                        "2027-04-09",
+                                        "2027-04-12",
+                                        "2027-04-13",
+                                        "2027-04-14",
+                                        "2027-04-15",
+                                        "2027-04-16",
+                                        "2027-04-19",
+                                        "2027-04-20",
+                                        "2027-04-21",
+                                        "2027-04-22",
+                                        "2027-04-23",
+                                        "2027-04-26",
+                                        "2027-04-27",
+                                        "2027-04-28",
+                                        "2027-04-29"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Geospatial Planning Expert",
+                                    "position": "Expert",
+                                    "employee_id": "sergio.rodrigues@tcc2026.com.br",
+                                    "employee_name": "Sergio Rodrigues",
+                                    "employee_position": "Expert",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Communication, Presentation and Documentation"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "communication, presentation and documentation"
+                                    ],
+                                    "allocated_dates": [
+                                        "2027-04-09",
+                                        "2027-04-12",
+                                        "2027-04-13",
+                                        "2027-04-14",
+                                        "2027-04-15",
+                                        "2027-04-16",
+                                        "2027-04-19",
+                                        "2027-04-20",
+                                        "2027-04-21",
+                                        "2027-04-22"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 2,
+                                    "role": "Rural Electrification Expert",
+                                    "position": "Expert",
+                                    "employee_id": "antonio.soares@tcc2026.com.br",
+                                    "employee_name": "Antonio Soares",
+                                    "employee_position": "Expert",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Distribution Networks and Retail Electricity",
+                                        "Strategy, Governance and Leadership"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "strategy, governance and leadership"
+                                    ],
+                                    "allocated_dates": [
+                                        "2027-04-09",
+                                        "2027-04-12",
+                                        "2027-04-13",
+                                        "2027-04-14",
+                                        "2027-04-15",
+                                        "2027-04-16",
+                                        "2027-04-19",
+                                        "2027-04-20",
+                                        "2027-04-21",
+                                        "2027-04-22"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 2,
+                            "cost": 48000.0,
+                            "real_cost": 28800.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Project Manager",
+                                    "position": "Team Leader",
+                                    "employee_id": "sandra.ramos@tcc2026.com.br",
+                                    "employee_name": "Sandra Ramos",
+                                    "employee_position": "Team Leader",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Research, Academia and Technical Writing",
+                                        "Project and Program Management"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "project and program management"
+                                    ],
+                                    "allocated_dates": [
+                                        "2027-04-09",
+                                        "2027-04-12",
+                                        "2027-04-13",
+                                        "2027-04-14",
+                                        "2027-04-15",
+                                        "2027-04-16",
+                                        "2027-04-19",
+                                        "2027-04-20",
+                                        "2027-04-21",
+                                        "2027-04-22",
+                                        "2027-04-23",
+                                        "2027-04-26",
+                                        "2027-04-27",
+                                        "2027-04-28",
+                                        "2027-04-29"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Geospatial Planning Expert",
+                                    "position": "Expert",
+                                    "employee_id": "henrique.castro@tcc2026.com.br",
+                                    "employee_name": "Henrique Castro",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Communication, Presentation and Documentation"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "communication, presentation and documentation"
+                                    ],
+                                    "allocated_dates": [
+                                        "2027-04-09",
+                                        "2027-04-12",
+                                        "2027-04-13",
+                                        "2027-04-14",
+                                        "2027-04-15",
+                                        "2027-04-16",
+                                        "2027-04-19",
+                                        "2027-04-20",
+                                        "2027-04-21",
+                                        "2027-04-22"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 2,
+                                    "role": "Rural Electrification Expert",
+                                    "position": "Expert",
+                                    "employee_id": "patricia.gomes@tcc2026.com.br",
+                                    "employee_name": "Patricia Gomes",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Distribution Networks and Retail Electricity",
+                                        "Strategy, Governance and Leadership"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "strategy, governance and leadership"
+                                    ],
+                                    "allocated_dates": [
+                                        "2027-04-09",
+                                        "2027-04-12",
+                                        "2027-04-13",
+                                        "2027-04-14",
+                                        "2027-04-15",
+                                        "2027-04-16",
+                                        "2027-04-19",
+                                        "2027-04-20",
+                                        "2027-04-21",
+                                        "2027-04-22"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        },
+                        {
+                            "rank": 3,
+                            "cost": 48000.0,
+                            "real_cost": 28800.0,
+                            "assignments": [
+                                {
+                                    "slot_index": 0,
+                                    "role": "Project Manager",
+                                    "position": "Team Leader",
+                                    "employee_id": "sandra.ramos@tcc2026.com.br",
+                                    "employee_name": "Sandra Ramos",
+                                    "employee_position": "Team Leader",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Research, Academia and Technical Writing",
+                                        "Project and Program Management"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "project and program management"
+                                    ],
+                                    "allocated_dates": [
+                                        "2027-04-09",
+                                        "2027-04-12",
+                                        "2027-04-13",
+                                        "2027-04-14",
+                                        "2027-04-15",
+                                        "2027-04-16",
+                                        "2027-04-19",
+                                        "2027-04-20",
+                                        "2027-04-21",
+                                        "2027-04-22",
+                                        "2027-04-23",
+                                        "2027-04-26",
+                                        "2027-04-27",
+                                        "2027-04-28",
+                                        "2027-04-29"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 1,
+                                    "role": "Geospatial Planning Expert",
+                                    "position": "Expert",
+                                    "employee_id": "henrique.castro@tcc2026.com.br",
+                                    "employee_name": "Henrique Castro",
+                                    "employee_position": "Head",
+                                    "skill_match_score": 1.0,
+                                    "required_macro_skills": [
+                                        "Communication, Presentation and Documentation"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "communication, presentation and documentation"
+                                    ],
+                                    "allocated_dates": [
+                                        "2027-04-09",
+                                        "2027-04-12",
+                                        "2027-04-13",
+                                        "2027-04-14",
+                                        "2027-04-15",
+                                        "2027-04-16",
+                                        "2027-04-19",
+                                        "2027-04-20",
+                                        "2027-04-21",
+                                        "2027-04-22"
+                                    ]
+                                },
+                                {
+                                    "slot_index": 2,
+                                    "role": "Rural Electrification Expert",
+                                    "position": "Expert",
+                                    "employee_id": "antonio.soares@tcc2026.com.br",
+                                    "employee_name": "Antonio Soares",
+                                    "employee_position": "Expert",
+                                    "skill_match_score": 0.5,
+                                    "required_macro_skills": [
+                                        "Distribution Networks and Retail Electricity",
+                                        "Strategy, Governance and Leadership"
+                                    ],
+                                    "matched_macro_skills": [
+                                        "strategy, governance and leadership"
+                                    ],
+                                    "allocated_dates": [
+                                        "2027-04-09",
+                                        "2027-04-12",
+                                        "2027-04-13",
+                                        "2027-04-14",
+                                        "2027-04-15",
+                                        "2027-04-16",
+                                        "2027-04-19",
+                                        "2027-04-20",
+                                        "2027-04-21",
+                                        "2027-04-22"
+                                    ]
+                                }
+                            ],
+                            "gaps": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
