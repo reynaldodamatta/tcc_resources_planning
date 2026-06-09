@@ -69,9 +69,6 @@ Proposta comercial
   Otimizador Python (program.py)
   └── Executa o AG por atividade → gera o arquivo OutputData.json
        ↓
-  Backend (.NET) (Esse codigo não foi disponibilizado, mas temos alguns inputs na pasta para validar o restante que está sendo entregue)
-  └── Lê o OutputData.json e carrega os dados para a base de dados novamente para que possa ser visualizado por outras ferramentas futuras.
-       ↓       
   Dashboard (dashboard.html)
   └── Lê o OutputData.json e exibe os resultados da otimização.
 ```
@@ -84,7 +81,7 @@ O **dashboard** transforma o JSON de resultado numa visualização navegável, s
 
 #### 2.2 O arquivo InputData.json 
 
-O arquivo de entrada foi projetado para ser **autocontido**, ou seja, ele contem todos os dados necessários para o otimizador  executar, sem a necessidade de consultar mais nenhuma fonte de dados. Cada entregável do projeto (`deliverables`), contêm um ou mais atividades (`activities`) e, cada atividade, uma ou mais vagas que precisam ser preenchidas (`expected_team`). Também inclue uma lista pré-filtrada de colaboradores aptos a preencher a vaga para a executar a atividade em questão (`candidate_employees`), incluindo quais dias de trabalho estão disponíveis.
+O arquivo de entrada foi projetado para ser **autocontido**, ou seja, ele contem todos os dados necessários para o otimizador  executar, sem a necessidade de consultar mais nenhuma fonte de dados. Cada entregável do projeto (`deliverables`), contêm um ou mais atividades (`activities`) e, cada atividade, uma ou mais vagas que precisam ser preenchidas (`expected_team`). Cada atividade inclue também uma lista pré-filtrada de colaboradores aptos a preencher a vaga  (`candidate_employees`), incluindo quais dias de trabalho estão disponíveis. Ao final do arquivo, uma tabela relaciona o cargo, com o nível hierárquico e o custo homem hora.  
 
 **InputData.json** - Visão geral da estrutura de dados 
 
@@ -162,7 +159,7 @@ O número extra no final de cada lista representa a opção de **terceirização
 **O pré-filtro — quem entra na lista de candidatos**
 
 Antes de o AG começar, o sistema já filtra quem pode ser candidato de cada vaga. Para entrar na lista, o colaborador precisa:
-1. Ter ao menos uma competência técnica (macrocompetência) em comum com as exigidas pela vaga.
+1. Ter ao menos uma competência técnica (macro skill) em comum com as exigidas pela vaga.
 2. Ter dias úteis livres suficientes no período da atividade.
 
 Quem não passa por esse filtro simplesmente não aparece como opção — reduzindo o espaço de busca e evitando avaliações desnecessárias.
@@ -182,11 +179,14 @@ O custo de cada vaga é calculado assim:
   
   custo_base_candidato: custo diário (custo homen/hora * 8 horas) do candidato, de acordo com o seu cargo (posição) na empresa. 
   
-  custo_base_da_vaga: custo diário de acordo com o cargo sugerido pela LLM, com base na análise da proposta.  
+  custo_base_da_vaga: custo diário (custo homen/hora * 8 horas) de acordo com o cargo sugerido pela LLM.  
  
 - **Sem candidato — terceirização:**
   ```
   custo = custo_base_da_vaga × dias_necessários × 3,0
+
+  onde:
+  3,0: penalização 
   ```
 
 O `max(custo_base_candidato, custo_base_da_vaga)` existe por um motivo importante: sem ele, um colaborador júnior (mais barato) alocado numa vaga sênior pareceria vantajoso apenas pelo custo baixo — o que seria uma decisão ruim. Ao usar o custo mínimo esperado para aquela vaga como piso, o sistema garante que qualquer desvio de perfil só pode encarecer, nunca baratear artificialmente.
@@ -279,7 +279,8 @@ Os cenários abaixo foram executados com o `program.py` pelo projeto em C#.net e
 | Vagas ocupadas por colaboradores em posição hierárquica inferior a requerida | 6 |
 
 
-**O que o Fitness Score de 0,544 significa:** o custo ideal seria aquele em que cada vaga fosse preenchida por um candidato com match perfeito de cargo e todas as skills. O fitness é calculado como `custo_ideal ÷ custo_penalizado_total` — quanto mais próximo de 1,0, mais perfeita a alocação. Um score de 0,544 indica que várias vagas foram preenchidas com candidatos sobrequalificados (mais caros) ou com cobertura parcial de competências. Isso é esperado num cenário real: o perfil disponível raramente é exatamente o que foi pedido.
+**O que o Fitness Score de 0,544 significa:** o custo ideal seria aquele em que cada vaga fosse preenchida por um candidato com match perfeito de cargo e todas as skills. O fitness é calculado como `custo_ideal ÷ custo_penalizado_total` — quanto mais próximo de 1,0 mais perfeita a alocação. O score obtido de 0,544 é explicado pelo alto número de vagas preenchidas
+por colaboradores subqualificados, ou seja, com menos skills que a requerida pela vaga (21 de 35 vagas), pelo número de vagas preenchidas por colaboradores em posição hierárquica inferior a requerida (6 de 35 vagas) e uma vaga que não foi preenchida.    
 
 **A única lacuna:** na atividade de pesquisa de mercados regionais, o sistema não encontrou nenhum colaborador com perfil de Lead Analyst que tivesse as macrocompetências exigidas e disponibilidade no período. O sistema sinalizou isso claramente — em vez de alocar alguém inadequado silenciosamente.
 
@@ -325,7 +326,7 @@ Os cenários abaixo foram executados com o `program.py` pelo projeto em C#.net e
 | Vagas ocupadas por colaboradores subqualificados (menos skills que as necessárias) | 9 |
 | Vagas ocupadas por colaboradores em posição hierárquica inferior a requerida | 2 |
 
-**O que o Fitness Score de 0,655 significa:** o custo ideal seria aquele em que cada vaga fosse preenchida por um candidato com match perfeito de cargo e todas as skills. O fitness é calculado como `custo_ideal ÷ custo_penalizado_total` — quanto mais próximo de 1,0, mais perfeita a alocação. Ao analisar o resultado das alocações feitas pelo algoritmo genético, embora não se tenha observado a necessidade de contratação de colaboradores externos, como no caso de estudo 1, muitas vagas foram preenchidas por colaboradores subqualificados (9, de um total de 20) e 2 colaboradores em posição hierárquica inferior a requerida para a atividade.  
+**O que o Fitness Score de 0,655 significa:** o custo ideal seria aquele em que cada vaga fosse preenchida por um candidato com match perfeito de cargo e todas as skills. O fitness é calculado como `custo_ideal ÷ custo_penalizado_total` — quanto mais próximo de 1,0 mais perfeita a alocação. O score obtido de 0,655 , um pouco melhor do que o obtido com relação ao Caso 1, é explicado pelo preenchimento de todas as vagas, sem a necessidade de contratação de colaboradores externos, pelo número menor de vagas preenchidas por colaboradores subqualificados (9 de 20 ) e pelo menor número de vagas prrenchidas por colaboradores em posição hierárquica inferior a requerida (2 de  20).  
 
 
 > 📂 Arquivos: [`Case 2/InputData.json`](Case%202/InputData.json) | [`Case 2/OutputData.json`](Case%202/OutputData.json) | [`Case 2/proposal.json`](Case%202/proposal.json)
